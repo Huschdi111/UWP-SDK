@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @10 Type=FloatConverter)" Category="CodeSchema_Class" Bounds="972.696666666666,190,138.933333333333,25" CodeSchemaProperty_IsInternal="True" CommonLabel="FloatConverter" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="FloatConverter" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Support/FloatConverter.cs&quot; StartLineNumber=5 StartCharacterOffset=7 EndLineNumber=5 EndCharacterOffset=21)" />
+    <Node Id="(@1 @10 Type=PressureFilter)" Category="CodeSchema_Class" Bounds="972.696666666667,135,131.786666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PressureFilter" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PressureFilter" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Support/PressureFilter.cs&quot; StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=31)" />
+    <Node Id="(@1 @7 Type=AES256Chiper)" Category="CodeSchema_Class" Bounds="40,800,135.223333333333,25" CodeSchemaProperty_IsInternal="True" CommonLabel="AES256Chiper" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="AES256Chiper" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Encryption/AES256Chiper.cs&quot; StartLineNumber=10 StartCharacterOffset=7 EndLineNumber=10 EndCharacterOffset=19)" />
+    <Node Id="@11" Category="CodeSchema_Namespace" Bounds="952.696666666667,40,337.78,250" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="Neosmartpen.Net.Support" DelayedChildNodesState="Incomplete" DelayedCrossGroupLinksState="Fetched" Group="Expanded" Label="Neosmartpen.Net.Support" />
+    <Node Id="@12" Category="CodeSchema_Class" Bounds="535.936666666667,520,229.583333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="BatteryAlarmReceivedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="BatteryAlarmReceivedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/BatteryAlarmReceivedEventArgs.cs&quot; StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=53)" />
+    <Node Id="@13" Category="CodeSchema_Class" Bounds="972.696666666667,415,162.556666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="BluetoothPenClient" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="BluetoothPenClient" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Bluetooth/BluetoothPenClient.cs&quot; StartLineNumber=19 StartCharacterOffset=14 EndLineNumber=19 EndCharacterOffset=32)" />
+    <Node Id="@14" Category="CodeSchema_Class" Bounds="1134.48333333333,135,135.993333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="ByteConverter" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ByteConverter" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Support/ByteConverter.cs&quot; StartLineNumber=7 StartCharacterOffset=17 EndLineNumber=7 EndCharacterOffset=30)" />
+    <Node Id="@15" Category="CodeSchema_Class" Bounds="1089.50333333333,80,102.153333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="ByteUtil" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ByteUtil" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Support/ByteUtil.cs&quot; StartLineNumber=7 StartCharacterOffset=17 EndLineNumber=7 EndCharacterOffset=25)" />
+    <Node Id="@16" Category="CodeSchema_Class" Bounds="384.443333333333,80,94.7633333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Chunk" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Chunk" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Chunk.cs&quot; StartLineNumber=9 StartCharacterOffset=17 EndLineNumber=9 EndCharacterOffset=22)" />
+    <Node Id="@17" Category="CodeSchema_Class" Bounds="40,355,171.293333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="ConnectedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ConnectedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/ConnectedEventArgs.cs&quot; StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=42)" />
+    <Node Id="@18" Category="CodeSchema_Enum" Bounds="646.72,355,174.02,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="DataTransmissionType" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Enum" Label="DataTransmissionType" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/DataTransmissionType.cs&quot; StartLineNumber=2 StartCharacterOffset=16 EndLineNumber=2 EndCharacterOffset=36)" />
+    <Node Id="@19" Category="CodeSchema_Class" Bounds="149.436666666667,80,80.51,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Dot" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Dot" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Framework/Net/Data/Dot.cs&quot; StartLineNumber=15 StartCharacterOffset=17 EndLineNumber=15 EndCharacterOffset=20)" />
+    <Node Id="@2" Category="CodeSchema_Assembly" AssemblyTimestamp="10/09/2019 10:46:30" Bounds="0,0,1310.47666666667,865" CodeSchemaProperty_StrongName="Neosmartpen.Net, Version=2.1.151.0, Culture=neutral, PublicKeyToken=null" CommonLabel="Neosmartpen.Net" DelayedChildNodesState="Incomplete" DelayedCrossGroupLinksState="Fetched" FilePath="$(0f14f4f1-6e37-4223-a462-88fe411263b9.OutputPath)" Group="Expanded" Label="Neosmartpen.Net.dll" />
+    <Node Id="@20" Category="CodeSchema_Class" Bounds="459.68,410,180.453333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="DotReceivedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="DotReceivedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/DotReceivedEventArgs.cs&quot; StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=44)" />
+    <Node Id="@21" Category="CodeSchema_Enum" Bounds="762.933333333333,80,106.366666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="DotTypes" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Enum" Label="DotTypes" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Framework/Net/Data/Dot.cs&quot; StartLineNumber=7 StartCharacterOffset=16 EndLineNumber=7 EndCharacterOffset=24)" />
+    <Node Id="@22" Category="CodeSchema_Class" Bounds="40,465,187.63,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="ErrorDetectedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ErrorDetectedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/ErrorDetectedEventArgs.cs&quot; StartLineNumber=14 StartCharacterOffset=24 EndLineNumber=14 EndCharacterOffset=46)" />
+    <Node Id="@23" Category="CodeSchema_Enum" Bounds="40,135,107.383333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="ErrorType" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Enum" Label="ErrorType" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/ErrorDetectedEventArgs.cs&quot; StartLineNumber=2 StartCharacterOffset=16 EndLineNumber=2 EndCharacterOffset=25)" />
+    <Node Id="@24" Category="CodeSchema_Class" Bounds="370.548333333333,690,134.173333333333,25" CodeSchemaProperty_IsInternal="True" CommonLabel="FilterForPaper" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="FilterForPaper" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Filter/FilterForPaper.cs&quot; StartLineNumber=4 StartCharacterOffset=7 EndLineNumber=4 EndCharacterOffset=21)" />
+    <Node Id="@25" Category="CodeSchema_Class" Bounds="249.38,410,180.3,25" CodeSchemaProperty_IsPublic="True" CommonLabel="ImageProcessErrorInfo" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ImageProcessErrorInfo" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/ImageProcessErrorInfo.cs&quot; StartLineNumber=8 StartCharacterOffset=17 EndLineNumber=8 EndCharacterOffset=38)" />
+    <Node Id="@26" Category="CodeSchema_Class" Bounds="241.293333333333,355,171.443333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="ImageProcessingInfo" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ImageProcessingInfo" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/ImageProcessingInfo.cs&quot; StartLineNumber=2 StartCharacterOffset=17 EndLineNumber=2 EndCharacterOffset=36)" />
+    <Node Id="@27" Category="CodeSchema_Interface" Bounds="634.473333333333,80,98.46,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IPacket" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Interface" Label="IPacket" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Framework/Net/IPacket.cs&quot; StartLineNumber=2 StartCharacterOffset=21 EndLineNumber=2 EndCharacterOffset=28)" />
+    <Node Id="@28" Category="CodeSchema_Interface" Bounds="597.236666666667,135,113.913333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IPenClient" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Interface" Label="IPenClient" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Framework/Net/Client/IPenClient.cs&quot; StartLineNumber=7 StartCharacterOffset=21 EndLineNumber=7 EndCharacterOffset=31)" />
+    <Node Id="@29" Category="CodeSchema_Interface" Bounds="386.606666666667,245,146.046666666667,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsInternal="True" CommonLabel="IPenClientParser" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Interface" Label="IPenClientParser" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/IPenClientParser.cs&quot; StartLineNumber=2 StartCharacterOffset=23 EndLineNumber=2 EndCharacterOffset=39)" />
+    <Node Id="@30" Category="CodeSchema_Interface" Bounds="519.056666666666,190,136.32,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IPenController" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Interface" Label="IPenController" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Framework/Net/Client/IPenController.cs&quot; StartLineNumber=5 StartCharacterOffset=21 EndLineNumber=5 EndCharacterOffset=35)" />
+    <Node Id="@31" Category="CodeSchema_Interface" Bounds="234.546666666667,300,165.27,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsInternal="True" CommonLabel="IPenControllerEvent" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Interface" Label="IPenControllerEvent" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/IPenControllerEvent.cs&quot; StartLineNumber=4 StartCharacterOffset=23 EndLineNumber=4 EndCharacterOffset=42)" />
+    <Node Id="@32" Category="CodeSchema_Class" Bounds="40,190,121.133333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineData" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="OfflineData" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Version1/OfflineData.cs&quot; StartLineNumber=6 StartCharacterOffset=26 EndLineNumber=6 EndCharacterOffset=37)" />
+    <Node Id="@33" Category="CodeSchema_Class" Bounds="685.376666666667,190,139.083333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineDataFile" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="OfflineDataFile" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/OfflineDataStructure.cs&quot; StartLineNumber=28 StartCharacterOffset=17 EndLineNumber=28 EndCharacterOffset=32)" />
+    <Node Id="@34" Category="CodeSchema_Class" Bounds="40,245,141.903333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineDataInfo" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="OfflineDataInfo" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/OfflineDataStructure.cs&quot; StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=32)" />
+    <Node Id="@35" Category="CodeSchema_Class" Bounds="299.88,575,238.793333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineDataListReceivedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="OfflineDataListReceivedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/OfflineDataListReceivedEventArgs.cs&quot; StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=56)" />
+    <Node Id="@36" Category="CodeSchema_Class" Bounds="562.653333333333,245,153.266666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineDataParser" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="OfflineDataParser" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Version1/OfflineDataParser.cs&quot; StartLineNumber=11 StartCharacterOffset=17 EndLineNumber=11 EndCharacterOffset=34)" />
+    <Node Id="@37" Category="CodeSchema_Class" Bounds="429.816666666667,300,168.66,25" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineDataSerializer" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="OfflineDataSerializer" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Version1/OfflineDataSerializer.cs&quot; StartLineNumber=9 StartCharacterOffset=17 EndLineNumber=9 EndCharacterOffset=38)" />
+    <Node Id="@38" Category="CodeSchema_Class" Bounds="40,575,229.88,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineStrokeReceivedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="OfflineStrokeReceivedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/OfflineStrokeReceivedEventArgs.cs&quot; StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=54)" />
+    <Node Id="@39" Category="CodeSchema_Class" Bounds="354.26,190,134.796666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineWorker" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="OfflineWorker" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Version1/OfflineWorker.cs&quot; StartLineNumber=9 StartCharacterOffset=17 EndLineNumber=9 EndCharacterOffset=30)" />
+    <Node Id="@4" Category="CodeSchema_Namespace" Bounds="20,40,902.696666666667,580" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="Neosmartpen.Net" DelayedChildNodesState="Incomplete" DelayedCrossGroupLinksState="Fetched" Group="Expanded" Label="Neosmartpen.Net" />
+    <Node Id="@40" Category="CodeSchema_Interface" Bounds="40,520,216.626666666667,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="OfflineWorkResponseHandler" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Interface" Label="OfflineWorkResponseHandler" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Version1/OfflineWorker.cs&quot; StartLineNumber=253 StartCharacterOffset=21 EndLineNumber=253 EndCharacterOffset=47)" />
+    <Node Id="@41" Category="CodeSchema_Class" Bounds="509.206666666667,80,95.2666666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Packet" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Packet" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Packet.cs&quot; StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=23)" />
+    <Node Id="@42" Category="CodeSchema_Class" Bounds="286.626666666667,520,219.31,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="PasswordRequestedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PasswordRequestedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/PasswordRequestedEventArgs.cs&quot; StartLineNumber=6 StartCharacterOffset=24 EndLineNumber=6 EndCharacterOffset=50)" />
+    <Node Id="@43" Category="CodeSchema_Class" Bounds="40,80,79.4366666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Pds" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Pds" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Framework/Net/Data/Pds.cs&quot; StartLineNumber=2 StartCharacterOffset=14 EndLineNumber=2 EndCharacterOffset=17)" />
+    <Node Id="@44" Category="CodeSchema_Class" Bounds="40,410,179.38,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="PdsReceivedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PdsReceivedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/PdsReceivedEventArgs.cs&quot; StartLineNumber=2 StartCharacterOffset=21 EndLineNumber=2 EndCharacterOffset=41)" />
+    <Node Id="@45" Category="CodeSchema_Class" Bounds="456.516666666667,135,110.72,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PenClient" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenClient" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/PenClient.cs&quot; StartLineNumber=8 StartCharacterOffset=17 EndLineNumber=8 EndCharacterOffset=26)" />
+    <Node Id="@46" Category="CodeSchema_Class" Bounds="745.92,245,156.776666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PenClientParserV1" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenClientParserV1" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Version1/PenClientParserV1.cs&quot; StartLineNumber=14 StartCharacterOffset=17 EndLineNumber=14 EndCharacterOffset=34)" />
+    <Node Id="@47" Category="CodeSchema_Class" Bounds="191.133333333333,190,133.126666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PenController" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenController" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/PenController.cs&quot; StartLineNumber=7 StartCharacterOffset=17 EndLineNumber=7 EndCharacterOffset=30)" />
+    <Node Id="@48" Category="CodeSchema_Class" Bounds="211.903333333333,245,144.703333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PenControllerEx" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenControllerEx" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/PenControllerEx.cs&quot; StartLineNumber=2 StartCharacterOffset=17 EndLineNumber=2 EndCharacterOffset=32)" />
+    <Node Id="@49" Category="CodeSchema_Class" Bounds="972.696666666667,360,142.523333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PenInformation" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenInformation" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Bluetooth/PenInfomation.cs&quot; StartLineNumber=10 StartCharacterOffset=14 EndLineNumber=10 EndCharacterOffset=28)" />
+    <Node Id="@50" Category="CodeSchema_Class" Bounds="741.15,135,114.113333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PenProfile" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenProfile" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/PenProfile.cs&quot; StartLineNumber=2 StartCharacterOffset=14 EndLineNumber=2 EndCharacterOffset=24)" />
+    <Node Id="@51" Category="CodeSchema_Class" Bounds="442.736666666667,355,173.983333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PenRequestException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenRequestException" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/PenController.cs&quot; StartLineNumber=1141 StartCharacterOffset=17 EndLineNumber=1141 EndCharacterOffset=36)" />
+    <Node Id="@52" Category="CodeSchema_Class" Bounds="487.74,465,212.396666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="PenStatusReceivedEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenStatusReceivedEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/PenStatusReceivedEventArgs.cs&quot; StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=50)" />
+    <Node Id="@53" Category="CodeSchema_Class" Bounds="972.696666666667,470,181.336666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PenUpdateInformation" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PenUpdateInformation" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Bluetooth/PenInfomation.cs&quot; StartLineNumber=132 StartCharacterOffset=17 EndLineNumber=132 EndCharacterOffset=37)" />
+    <Node Id="@54" Category="CodeSchema_Class" Bounds="972.696666666667,245,163.073333333333,25" CodeSchemaProperty_IsInternal="True" CommonLabel="PressureCalibration" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PressureCalibration" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Support/PressureCalibration.cs&quot; StartLineNumber=4 StartCharacterOffset=16 EndLineNumber=4 EndCharacterOffset=35)" />
+    <Node Id="@55" Category="CodeSchema_Class" Bounds="181.806666666667,690,115.883333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PrivateKey" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PrivateKey" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Encryption/PrivateKey.cs&quot; StartLineNumber=6 StartCharacterOffset=14 EndLineNumber=6 EndCharacterOffset=24)" />
+    <Node Id="@56" Category="CodeSchema_Class" Bounds="257.63,465,200.11,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="ProgressChangeEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ProgressChangeEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/ProgressChangeEventArgs.cs&quot; StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=47)" />
+    <Node Id="@57" Category="CodeSchema_Class" Bounds="315.923333333333,135,110.593333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Protocols" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Protocols" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Protocols.cs&quot; StartLineNumber=2 StartCharacterOffset=17 EndLineNumber=2 EndCharacterOffset=26)" />
+    <Node Id="@58" Category="CodeSchema_Class" Bounds="40,690,111.806666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="PublicKey" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PublicKey" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Encryption/PublicKey.cs&quot; StartLineNumber=6 StartCharacterOffset=14 EndLineNumber=6 EndCharacterOffset=23)" />
+    <Node Id="@59" Category="CodeSchema_Class" Bounds="628.476666666666,300,168.95,25" CodeSchemaProperty_IsPublic="True" CommonLabel="RequestIsUnreached" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="RequestIsUnreached" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/PenController.cs&quot; StartLineNumber=1148 StartCharacterOffset=17 EndLineNumber=1148 EndCharacterOffset=35)" />
+    <Node Id="@6" Category="CodeSchema_Namespace" Bounds="952.696666666667,320,221.336666666667,195" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="Neosmartpen.Net.Bluetooth" DelayedChildNodesState="Incomplete" DelayedCrossGroupLinksState="Fetched" Group="Expanded" Label="Neosmartpen.Net.Bluetooth" />
+    <Node Id="@60" Category="CodeSchema_Class" Bounds="40,745,116.686666666667,25" CodeSchemaProperty_IsInternal="True" CommonLabel="RSAChiper" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="RSAChiper" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Encryption/RSAChiper.cs&quot; StartLineNumber=9 StartCharacterOffset=7 EndLineNumber=9 EndCharacterOffset=16)" />
+    <Node Id="@61" Category="CodeSchema_Class" Bounds="670.133333333334,410,181.836666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="SimpleResultEventArgs" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="SimpleResultEventArgs" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/Event/SimpleResultEventArgs.cs&quot; StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=45)" />
+    <Node Id="@62" Category="CodeSchema_Class" Bounds="259.946666666667,80,94.4966666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Stroke" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Stroke" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Framework/Net/Data/Stroke.cs&quot; StartLineNumber=9 StartCharacterOffset=17 EndLineNumber=9 EndCharacterOffset=23)" />
+    <Node Id="@63" Category="CodeSchema_Class" Bounds="972.696666666667,80,86.8066666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Time" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Time" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Support/Time.cs&quot; StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=21)" />
+    <Node Id="@64" Category="CodeSchema_Class" Bounds="40,300,164.546666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="UnavailableRequest" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="UnavailableRequest" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/PenController.cs&quot; StartLineNumber=1155 StartCharacterOffset=17 EndLineNumber=1155 EndCharacterOffset=35)" />
+    <Node Id="@65" Category="CodeSchema_Enum" Bounds="177.383333333333,135,108.54,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="UsbMode" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Enum" Label="UsbMode" SourceLocation="(Assembly=&quot;file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/Neosmartpen/Implementation/Net/Client/UsbMode.cs&quot; StartLineNumber=2 StartCharacterOffset=16 EndLineNumber=2 EndCharacterOffset=23)" />
+    <Node Id="@8" Category="CodeSchema_Namespace" Bounds="20,650,297.69,195" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="Neosmartpen.Net.Encryption" DelayedChildNodesState="Incomplete" DelayedCrossGroupLinksState="Fetched" Group="Expanded" Label="Neosmartpen.Net.Encryption" />
+    <Node Id="@9" Category="CodeSchema_Namespace" Bounds="347.69,650,179.89,85" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="Neosmartpen.Net.Filter" DelayedChildNodesState="Incomplete" DelayedCrossGroupLinksState="Fetched" Group="Expanded" Label="Neosmartpen.Net.Filter" />
+  </Nodes>
+  <Links>
+    <Link Source="@11" Target="(@1 @10 Type=FloatConverter)" Category="Contains" FetchingParent="@11" />
+    <Link Source="@11" Target="(@1 @10 Type=PressureFilter)" Category="Contains" FetchingParent="@11" />
+    <Link Source="@11" Target="@14" Category="Contains" FetchingParent="@11" />
+    <Link Source="@11" Target="@15" Category="Contains" FetchingParent="@11" />
+    <Link Source="@11" Target="@54" Category="Contains" FetchingParent="@11" />
+    <Link Source="@11" Target="@63" Category="Contains" FetchingParent="@11" />
+    <Link Source="@13" Target="@30" Category="References" Bounds="621.25490360321,218.908069794981,406.789077878272,196.091930205019" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@13" Target="@45" Category="InheritsFrom" Bounds="544.073824351575,164.130200827847,485.700357196044,250.869799172153" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@13" Target="@49" Category="References" Bounds="1047.8474076604,393.854645983298,3.85108132719438,21.1457429055407" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="129">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_FieldRead" />
+    </Link>
+    <Link Source="@13" Target="@53" Category="References" Bounds="1056.10908702893,440.000388888838,3.60719867973921,21.1284651869565" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="18">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@13" Target="@57" Category="CodeSchema_FieldRead" Bounds="410.027099460063,163.414915084939,613.467766611365,251.585084915061" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@15" Target="@14" Category="CodeSchema_Calls" Bounds="1154.64815623972,104.999688888838,27.0358098515221,24.0221687466025" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@19" Target="@21" Category="References" Bounds="217.51969909668,104.999572753906,555.103042602539,10.1341781616211" IsSourceVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@19" Target="@54" Category="CodeSchema_Calls" Bounds="229.94334817995,100.182136912266,749.953969425805,143.130643352749" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4" />
+    <Link Source="@2" Target="@11" Category="Contains" FetchingParent="@2" />
+    <Link Source="@2" Target="@4" Category="Contains" FetchingParent="@2" />
+    <Link Source="@2" Target="@6" Category="Contains" FetchingParent="@2" />
+    <Link Source="@2" Target="@8" Category="Contains" FetchingParent="@2" />
+    <Link Source="@2" Target="@9" Category="Contains" FetchingParent="@2" />
+    <Link Source="@20" Target="@19" Category="References" Bounds="228.453033447266,108.420440673828,276.149597167969,301.579559326172" IsSourceVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@20" Target="@26" Category="References" Bounds="386.410153505241,382.156185520382,112.83927013969,27.8438144796175" IsSourceVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@22" Target="@19" Category="References" Bounds="168.874618530273,113.434997558594,56.8155517578125,351.565277099609" IsSourceVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@22" Target="@23" Category="References" Bounds="29.8658180236816,164.070114135742,63.8031044006348,300.930160522461" IsSourceVirtualized="True" Weight="8">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@22" Target="@25" Category="References" Bounds="180.568304250271,437.324747764994,103.513781374158,27.6755255682164" IsSourceVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@24" Target="@19" Category="References" Bounds="198.161400970292,113.337575488532,234.392793018779,576.662424511468" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="136">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@24" Target="@21" Category="References" Bounds="445.390771857924,112.647542342314,358.225115456356,577.352457657686" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@28" Target="@30" Category="CodeSchema_ReturnTypeLink" Bounds="604.049255371094,159.99967956543,56.0919189453125,24.9201965332031" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@29" Target="@28" Category="CodeSchema_ReturnTypeLink" Bounds="469.726959228516,162.552352905273,133.570159912109,82.4475250244141" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@29" Target="@41" Category="References" Bounds="469.726959228516,113.700454711914,99.0887756347656,131.299423217773" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@30" Target="@28" Category="References" Bounds="585.728881835938,163.505706787109,51.1249389648438,26.4940643310547" IsSourceVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@31" Target="@12" Category="References" Bounds="357.999786376953,324.999969482422,217.020172119141,193.346099853516" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@17" Category="References" Bounds="177.827686734428,324.99997333321,95.8233772606073,27.5160953959909" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@20" Category="References" Bounds="357.999786376953,324.999969482422,127.702270507813,83.0183715820313" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@28" Category="References" Bounds="329.550964355469,161.498550415039,261.809936523438,138.501419067383" IsSourceVirtualized="True" Weight="54" />
+    <Link Source="@31" Target="@35" Category="References" Bounds="232.926040649414,324.999969482422,105.949996948242,248.451324462891" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@38" Category="References" Bounds="206.770324707031,324.999969482422,77.1886596679688,247.494720458984" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@42" Category="References" Bounds="357.999786376953,324.999969482422,108.361206054688,192.125762939453" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@52" Category="References" Bounds="357.999786376953,324.999969482422,171.390655517578,138.031372070313" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@56" Category="References" Bounds="357.999786376953,324.999969482422,77.5480041503906,136.659301757813" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@61" Category="References" Bounds="357.999786376953,324.999969482422,304.028411865234,86.2113342285156" IsSourceVirtualized="True" Weight="26" />
+    <Link Source="@32" Target="@19" Category="References" Bounds="122.561584472656,113.313842773438,58.5039825439453,76.6859283447266" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@32" Target="@62" Category="References" Bounds="114.615882873535,107.639717102051,143.233024597168,82.3600540161133" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@35" Target="@34" Category="References" Bounds="159.598449707031,272.699188232422,204.533721923828,302.301239013672" IsSourceVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@36" Target="@14" Category="CodeSchema_Calls" Bounds="703.285909090909,161.671803065083,426.635318113021,83.3281969349169" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="17" />
+    <Link Source="@36" Target="@19" Category="References" Bounds="238.79655456543,101.58243560791,350.142288208008,143.417411804199" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="25">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@36" Target="@24" Category="References" Bounds="447.014114808018,270,186.608179199472,411.80239725483" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@36" Target="@32" Category="InheritsFrom" Bounds="148.684539794922,217.817611694336,440.254302978516,27.1822357177734" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_FieldRead" />
+    </Link>
+    <Link Source="@37" Target="@14" Category="CodeSchema_Calls" Bounds="566.293131313131,162.097952018585,575.288341579034,137.902047981415" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@37" Target="@15" Category="CodeSchema_Calls" Bounds="549.73946969697,107.982189076741,546.756169800121,192.017810923259" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@37" Target="@32" Category="InheritsFrom" Bounds="169.950241088867,213.827728271484,291.025405883789,86.1722106933594" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_FieldRead" />
+    </Link>
+    <Link Source="@37" Target="@63" Category="CodeSchema_Calls" Bounds="542.666742424242,108.612818995652,436.67015210183,191.387181004348" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@38" Target="@62" Category="References" Bounds="188.038345336914,113.908363342285,116.085342407227,461.092124938965" IsSourceVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@39" Target="@32" Category="InheritsFrom" Bounds="168.303314208984,211.759643554688,186.276641845703,13.3743133544922" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@39" Target="@33" Category="References" Bounds="488.767822265625,179.865570068359,190.912841796875,13.4593811035156" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="18">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_FieldRead" />
+    </Link>
+    <Link Source="@39" Target="@34" Category="References" Bounds="187.852039636116,214.061455857415,168.492015393111,29.8258090025619" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="19">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@39" Target="@36" Category="CodeSchema_Calls" Bounds="471.119249236188,214.99977333321,109.980841974776,27.7948861154295" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@39" Target="@40" Category="References" Bounds="191.32307434082,214.999771118164,218.959915161133,301.938400268555" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@39" Target="@62" Category="CodeSchema_ReturnTypeLink" Bounds="306.177307128906,113.998100280762,70.7313232421875,76.0016708374023" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@4" Target="@12" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@16" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@17" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@18" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@19" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@20" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@21" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@22" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@23" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@25" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@26" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@27" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@28" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@29" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@30" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@31" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@32" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@33" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@34" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@35" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@36" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@37" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@38" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@39" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@40" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@41" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@42" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@43" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@44" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@45" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@46" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@47" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@48" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@50" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@51" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@52" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@56" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@57" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@59" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@61" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@62" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@64" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@65" Category="Contains" FetchingParent="@4" />
+    <Link Source="@40" Target="@62" Category="References" Bounds="182.86003112793,113.908363342285,121.263656616211,406.092002868652" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@41" Target="@27" Category="Implements" Bounds="604.473333333333,92.4995733332104,20.4999999999999,0" IsSourceVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@44" Target="@43" Category="References" Bounds="29.8658180236816,110.25178527832,61.2712135314941,299.748397827148" IsSourceVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@45" Target="@28" Category="Implements" Bounds="567.236666666667,147.49967333321,20.4999999999999,0" Weight="1" />
+    <Link Source="@45" Target="@30" Category="References" Bounds="528.999362807219,159.99967333321,33.8255121029952,24.6934768810187" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@46" Target="@12" Category="References" Bounds="689.288818359375,270,165.941345214844,246.562194824219" IsSourceVirtualized="True" Weight="9" />
+    <Link Source="@46" Target="@14" Category="CodeSchema_Calls" Bounds="867.282386363636,162.513679843395,283.581719734759,82.4863201566046" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="11" />
+    <Link Source="@46" Target="@15" Category="References" Bounds="848.268308080808,109.162869879569,260.372336596398,135.837130120431" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="287">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@16" Category="References" Bounds="487.103485107422,104.810256958008,279.634613037109,140.189743041992" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@17" Category="References" Bounds="187.302764892578,269.404296875,561.250335693359,83.5310668945313" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@19" Category="References" Bounds="238.79655456543,101.58243560791,527.941543579102,143.41756439209" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="27">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@20" Category="References" Bounds="589.804260253906,270,231.807556152344,136.62158203125" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@22" Category="References" Bounds="179.297439575195,269.404296875,569.255661010742,192.703643798828" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="16">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@24" Category="References" Bounds="454.399756722008,270,359.046966124434,413.206410041309" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@28" Category="References" Bounds="659.937622070313,168.686050415039,106.800476074219,76.3139495849609" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="300">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@46" Target="@29" Category="Implements" Bounds="538.646301269531,266.803527832031,207.610290527344,13.3305053710938" Weight="1" />
+    <Link Source="@46" Target="@34" Category="References" Bounds="164.411361694336,270,605.63459777832,10.1340637207031" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@35" Category="References" Bounds="546.448303222656,270,306.694030761719,305.95068359375" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="11">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@37" Category="References" Bounds="593.499769192309,270,160.317212179189,28.4285248681971" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_FieldRead" />
+    </Link>
+    <Link Source="@46" Target="@38" Category="References" Bounds="206.770385742188,270,621.845520019531,302.494934082031" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@39" Category="References" Bounds="497.687707080959,212.885052830177,249.28127116706,34.0507299589562" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_FieldWrite" />
+    </Link>
+    <Link Source="@46" Target="@40" Category="Implements" Bounds="191.780334472656,269.404296875,556.772766113281,247.328308105469" Weight="1" />
+    <Link Source="@46" Target="@41" Category="References" Bounds="565.087951660156,113.342643737793,201.650146484375,131.657356262207" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="91">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@42" Category="References" Bounds="422.397033691406,270,406.218872070313,244.98779296875" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@50" Category="CodeSchema_FieldRead" Bounds="818.984558105469,165.981140136719,10.1338500976563,79.0188598632813" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="38" />
+    <Link Source="@46" Target="@52" Category="References" Bounds="614.5400390625,270,214.075866699219,188.98388671875" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@54" Category="CodeSchema_Calls" Bounds="902.696666666667,257.5,61,0" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4" />
+    <Link Source="@46" Target="@56" Category="References" Bounds="400.779937744141,270,420.831878662109,191.899444580078" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@61" Category="References" Bounds="789.58837890625,270,34.8655395507813,135.366149902344" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="179">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@46" Target="@62" Category="References" Bounds="363.300567626953,101.920013427734,403.437530517578,143.079986572266" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@46" Target="@63" Category="CodeSchema_Calls" Bounds="838.838005050505,110.869563227395,155.909697086944,134.130436772605" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4" />
+    <Link Source="@47" Target="@12" Category="References" Bounds="299.810485839844,214.999771118164,275.20947265625,303.346298217773" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@17" Category="References" Bounds="168.480285644531,214.999771118164,67.6166839599609,136.896438598633" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@18" Category="References" Bounds="299.810485839844,214.999771118164,338.792663574219,141.193984985352" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@20" Category="References" Bounds="299.810485839844,214.999771118164,185.891967773438,193.016860961914" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@22" Category="References" Bounds="179.30046081543,214.999771118164,56.7965087890625,247.117111206055" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@28" Category="References" Bounds="323.983459472656,160.232315063477,265.840209960938,33.1277008056641" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="74">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@47" Target="@30" Category="Implements" Bounds="323.979858398438,179.865585327148,188.758361816406,13.4840850830078" Weight="1" />
+    <Link Source="@47" Target="@31" Category="Implements" Bounds="299.810485839844,214.999771118164,66.9303588867188,79.7252655029297" Weight="1" />
+    <Link Source="@47" Target="@34" Category="CodeSchema_Calls" Bounds="152.730257601991,214.999773333211,71.6153333393591,26.8414630494946" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@35" Category="References" Bounds="207.820663452148,214.999771118164,131.055374145508,358.451522827148" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@38" Category="References" Bounds="206.770324707031,214.999771118164,59.9905090332031,357.494918823242" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@42" Category="References" Bounds="208.981994628906,214.999771118164,121.042938232422,303.087509155273" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@46" Category="References" Bounds="300.053802490234,214.999771118164,466.644195556641,27.7834930419922" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="96">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@47" Target="@50" Category="CodeSchema_FieldRead" Bounds="323.983459472656,162.815139770508,428.567993164063,30.5448760986328" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="26" />
+    <Link Source="@47" Target="@52" Category="References" Bounds="299.810485839844,214.999771118164,229.579956054688,248.031723022461" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@54" Category="CodeSchema_Calls" Bounds="324.26,207.096126564586,639.458045144239,44.153890153121" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_FieldRead" />
+    </Link>
+    <Link Source="@47" Target="@56" Category="References" Bounds="208.007247924805,214.999771118164,95.2538299560547,247.628036499023" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@47" Target="@57" Category="CodeSchema_FieldRead" Bounds="283.497377332041,163.923736465054,53.8224226027949,26.0760368681561" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7" />
+    <Link Source="@47" Target="@59" Category="CodeSchema_Calls" Bounds="323.580902099609,212.515686035156,318.588165283203,85.7044982910156" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@47" Target="@61" Category="References" Bounds="299.810485839844,214.999771118164,362.217712402344,196.211532592773" IsSourceVirtualized="True" Weight="38" />
+    <Link Source="@47" Target="@64" Category="CodeSchema_Calls" Bounds="150.629898071289,214.999771118164,93.2501220703125,80.3361663818359" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4" />
+    <Link Source="@47" Target="@65" Category="References" Bounds="241.423910164026,168.133848531437,10.3538278703892,21.8659248017739" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@48" Target="@47" Category="InheritsFrom" Bounds="267.863584265648,223.554614298473,10.3554418603648,21.4452590347378" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@49" Target="@53" Category="References" Bounds="1083.13122558594,385.000274658203,62.25634765625,81.6791687011719" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_FieldRead" />
+    </Link>
+    <Link Source="@59" Target="@51" Category="InheritsFrom" Bounds="580.468898543647,325,90.8411014563529,27.268691651897" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@6" Target="@13" Category="Contains" FetchingParent="@6" />
+    <Link Source="@6" Target="@49" Category="Contains" FetchingParent="@6" />
+    <Link Source="@6" Target="@53" Category="Contains" FetchingParent="@6" />
+    <Link Source="@60" Target="@55" Category="References" Bounds="130.480774901621,718.263267148153,68.7422605158544,26.7376061850574" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@60" Target="@58" Category="References" Bounds="96.8567574513415,723.991929822088,0.932031435708993,21.0089435111224" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@62" Target="@19" Category="References" Bounds="238.946666666667,92.4995733332105,21,1.4210854715202E-14" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@64" Target="@51" Category="InheritsFrom" Bounds="203.191553455812,323.42266237756,232.099679196251,31.3298119918693" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@8" Target="(@1 @7 Type=AES256Chiper)" Category="Contains" FetchingParent="@8" />
+    <Link Source="@8" Target="@55" Category="Contains" FetchingParent="@8" />
+    <Link Source="@8" Target="@58" Category="Contains" FetchingParent="@8" />
+    <Link Source="@8" Target="@60" Category="Contains" FetchingParent="@8" />
+    <Link Source="@9" Target="@24" Category="Contains" FetchingParent="@9" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Assembly" Label="Assembly" BasedOn="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Assembly" NavigationActionLabel="Assemblies" />
+    <Category Id="CodeSchema_Calls" Label="Calls" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" />
+    <Category Id="CodeSchema_Class" Label="Class" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Classes" />
+    <Category Id="CodeSchema_Enum" Label="Enum" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Enum" NavigationActionLabel="Enums" />
+    <Category Id="CodeSchema_FieldRead" Label="Field Read" BasedOn="CodeSchema_FieldReference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Read By" OutgoingActionLabel="Reads Fields" />
+    <Category Id="CodeSchema_FieldReference" Label="Field Reference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References Fields" />
+    <Category Id="CodeSchema_FieldWrite" Label="Field Write" BasedOn="CodeSchema_FieldReference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Written By" OutgoingActionLabel="Writes Fields" />
+    <Category Id="CodeSchema_Interface" Label="Interface" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Interface" NavigationActionLabel="Interfaces" />
+    <Category Id="CodeSchema_Namespace" Label="Namespace" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Type" Icon="CodeSchema_Namespace" NavigationActionLabel="Namespaces" />
+    <Category Id="CodeSchema_ReturnTypeLink" Label="Return" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Return types" OutgoingActionLabel="Return types" />
+    <Category Id="CodeSchema_Type" Label="Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Types" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="File" Label="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" NavigationActionLabel="Files" />
+    <Category Id="Implements" Label="Implements" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Implemented by" OutgoingActionLabel="Implements" />
+    <Category Id="InheritsFrom" Label="Inherits From" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Inherited By" OutgoingActionLabel="Inherits From" />
+    <Category Id="References" Label="References" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
+  </Categories>
+  <Properties>
+    <Property Id="AssemblyTimestamp" DataType="System.DateTime" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsAbstract" Label="Is Abstract" Description="Flag to indicate member is 'Abstract' does not provide a full implementation" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsFinal" Label="Is Final" Description="Flag to indicate the member is 'Final' and cannot be derived from" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsInternal" Label="Is Internal" Description="Flag to indicate the method is 'Internal'" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsStatic" Label="Is Static" Description="Flag to indicate the member is a static member" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_StrongName" Label="StrongName" Description="StrongName" DataType="System.String" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="Data Virtualized" Description="If true, the graph can contain nodes and links that represent data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedChildNodesState" Label="Delayed Child Nodes State" Description="Unspecified if the delayed child nodes state is not specified. NotFetched if the group contains child nodes that are not fetched into the graph yet. Fetched if the group has all its delayed child nodes already fetched." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="DelayedCrossGroupLinksState" Label="Delayed Cross-Group Links State" Description="Unspecified if the delayed cross-group links state is not specified. NotFetched if delayed cross-group links on this node are not fetched into the graph yet. Fetched if all delayed cross-group links have already fetched." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FetchingParent" DataType="Microsoft.VisualStudio.GraphModel.GraphNodeId" />
+    <Property Id="FilePath" Label="File Path" Description="File Path" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsSourceVirtualized" Label="Link Source Virtualized" Description="If true, the link source end contains data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="IsTargetVirtualized" Label="Link Target Virtualized" Description="If true, the link target end contains data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+    <Property Id="Weight" Label="Weight" Description="Weight" DataType="System.Double" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(0f14f4f1-6e37-4223-a462-88fe411263b9.OutputPathUri)" />
+    <Alias n="2" Id="(@1)" />
+    <Alias n="3" Id="Namespace=Neosmartpen.Net" />
+    <Alias n="4" Id="(@1 @3)" />
+    <Alias n="5" Id="Namespace=Neosmartpen.Net.Bluetooth" />
+    <Alias n="6" Id="(@1 @5)" />
+    <Alias n="7" Id="Namespace=Neosmartpen.Net.Encryption" />
+    <Alias n="8" Id="(@1 @7)" />
+    <Alias n="9" Id="(@1 Namespace=Neosmartpen.Net.Filter)" />
+    <Alias n="10" Id="Namespace=Neosmartpen.Net.Support" />
+    <Alias n="11" Id="(@1 @10)" />
+    <Alias n="12" Id="(@1 @3 Type=BatteryAlarmReceivedEventArgs)" />
+    <Alias n="13" Id="(@1 @5 Type=BluetoothPenClient)" />
+    <Alias n="14" Id="(@1 @10 Type=ByteConverter)" />
+    <Alias n="15" Id="(@1 @10 Type=ByteUtil)" />
+    <Alias n="16" Id="(@1 @3 Type=Chunk)" />
+    <Alias n="17" Id="(@1 @3 Type=ConnectedEventArgs)" />
+    <Alias n="18" Id="(@1 @3 Type=DataTransmissionType)" />
+    <Alias n="19" Id="(@1 @3 Type=Dot)" />
+    <Alias n="20" Id="(@1 @3 Type=DotReceivedEventArgs)" />
+    <Alias n="21" Id="(@1 @3 Type=DotTypes)" />
+    <Alias n="22" Id="(@1 @3 Type=ErrorDetectedEventArgs)" />
+    <Alias n="23" Id="(@1 @3 Type=ErrorType)" />
+    <Alias n="24" Id="(@1 Namespace=Neosmartpen.Net.Filter Type=FilterForPaper)" />
+    <Alias n="25" Id="(@1 @3 Type=ImageProcessErrorInfo)" />
+    <Alias n="26" Id="(@1 @3 Type=ImageProcessingInfo)" />
+    <Alias n="27" Id="(@1 @3 Type=IPacket)" />
+    <Alias n="28" Id="(@1 @3 Type=IPenClient)" />
+    <Alias n="29" Id="(@1 @3 Type=IPenClientParser)" />
+    <Alias n="30" Id="(@1 @3 Type=IPenController)" />
+    <Alias n="31" Id="(@1 @3 Type=IPenControllerEvent)" />
+    <Alias n="32" Id="(@1 @3 Type=OfflineData)" />
+    <Alias n="33" Id="(@1 @3 Type=OfflineDataFile)" />
+    <Alias n="34" Id="(@1 @3 Type=OfflineDataInfo)" />
+    <Alias n="35" Id="(@1 @3 Type=OfflineDataListReceivedEventArgs)" />
+    <Alias n="36" Id="(@1 @3 Type=OfflineDataParser)" />
+    <Alias n="37" Id="(@1 @3 Type=OfflineDataSerializer)" />
+    <Alias n="38" Id="(@1 @3 Type=OfflineStrokeReceivedEventArgs)" />
+    <Alias n="39" Id="(@1 @3 Type=OfflineWorker)" />
+    <Alias n="40" Id="(@1 @3 Type=OfflineWorkResponseHandler)" />
+    <Alias n="41" Id="(@1 @3 Type=Packet)" />
+    <Alias n="42" Id="(@1 @3 Type=PasswordRequestedEventArgs)" />
+    <Alias n="43" Id="(@1 @3 Type=Pds)" />
+    <Alias n="44" Id="(@1 @3 Type=PdsReceivedEventArgs)" />
+    <Alias n="45" Id="(@1 @3 Type=PenClient)" />
+    <Alias n="46" Id="(@1 @3 Type=PenClientParserV1)" />
+    <Alias n="47" Id="(@1 @3 Type=PenController)" />
+    <Alias n="48" Id="(@1 @3 Type=PenControllerEx)" />
+    <Alias n="49" Id="(@1 @5 Type=PenInformation)" />
+    <Alias n="50" Id="(@1 @3 Type=PenProfile)" />
+    <Alias n="51" Id="(@1 @3 Type=PenRequestException)" />
+    <Alias n="52" Id="(@1 @3 Type=PenStatusReceivedEventArgs)" />
+    <Alias n="53" Id="(@1 @5 Type=PenUpdateInformation)" />
+    <Alias n="54" Id="(@1 @10 Type=PressureCalibration)" />
+    <Alias n="55" Id="(@1 @7 Type=PrivateKey)" />
+    <Alias n="56" Id="(@1 @3 Type=ProgressChangeEventArgs)" />
+    <Alias n="57" Id="(@1 @3 Type=Protocols)" />
+    <Alias n="58" Id="(@1 @7 Type=PublicKey)" />
+    <Alias n="59" Id="(@1 @3 Type=RequestIsUnreached)" />
+    <Alias n="60" Id="(@1 @7 Type=RSAChiper)" />
+    <Alias n="61" Id="(@1 @3 Type=SimpleResultEventArgs)" />
+    <Alias n="62" Id="(@1 @3 Type=Stroke)" />
+    <Alias n="63" Id="(@1 @10 Type=Time)" />
+    <Alias n="64" Id="(@1 @3 Type=UnavailableRequest)" />
+    <Alias n="65" Id="(@1 @3 Type=UsbMode)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Results" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Test Project" ValueLabel="Test Project">
+      <Condition Expression="HasCategory('CodeMap_TestProject')" />
+      <Setter Property="Icon" Value="CodeMap_TestProject" />
+      <Setter Property="Background" Value="#FF307A69" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Web Project" ValueLabel="Web Project">
+      <Condition Expression="HasCategory('CodeMap_WebProject')" />
+      <Setter Property="Icon" Value="CodeMap_WebProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Windows Store Project" ValueLabel="Windows Store Project">
+      <Condition Expression="HasCategory('CodeMap_WindowsStoreProject')" />
+      <Setter Property="Icon" Value="CodeMap_WindowsStoreProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Phone Project" ValueLabel="Phone Project">
+      <Condition Expression="HasCategory('CodeMap_PhoneProject')" />
+      <Setter Property="Icon" Value="CodeMap_PhoneProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Portable Library" ValueLabel="Portable Library">
+      <Condition Expression="HasCategory('CodeMap_PortableLibraryProject')" />
+      <Setter Property="Icon" Value="CodeMap_PortableLibraryProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="WPF Project" ValueLabel="WPF Project">
+      <Condition Expression="HasCategory('CodeMap_WpfProject')" />
+      <Setter Property="Icon" Value="CodeMap_WpfProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="VSIX Project" ValueLabel="VSIX Project">
+      <Condition Expression="HasCategory('CodeMap_VsixProject')" />
+      <Setter Property="Icon" Value="CodeMap_VsixProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Modeling Project" ValueLabel="Modeling Project">
+      <Condition Expression="HasCategory('CodeMap_ModelingProject')" />
+      <Setter Property="Icon" Value="CodeMap_ModelingProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Assembly" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Namespace" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Interface" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Struct" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enumeration" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Delegate" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Class" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF0E70C0" />
+      <Setter Property="Stroke" Value="#FF0E70C0" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Method" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Event" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="Has category">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True">
+      <Condition Expression="HasCategory('InheritsFrom')" />
+      <Setter Property="Stroke" Value="#FF00A600" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True">
+      <Condition Expression="HasCategory('Implements')" />
+      <Setter Property="Stroke" Value="#8000A600" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Calls" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Calls')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Function Pointer" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FunctionPointer')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Write" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldWrite')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="DrawArrow" Value="true" />
+      <Setter Property="IsHidden" Value="false" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Return" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_ReturnTypeLink')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="References" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('References')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Uses Attribute" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_AttributeUse')" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Solution Folder" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeMap_SolutionFolder')" />
+      <Setter Property="Background" Value="#FFDEBA83" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Project Reference" ValueLabel="Project Reference">
+      <Condition Expression="HasCategory('CodeMap_ProjectReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="External Reference" ValueLabel="External Reference">
+      <Condition Expression="HasCategory('CodeMap_ExternalReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="0f14f4f1-6e37-4223-a462-88fe411263b9.OutputPath" Value="C:\Users\jarab\Documents\FHNW\Semester 7\Projekt\repos\UWP-SDK_clone\Neosmartpen.Net\bin\Debug\Neosmartpen.Net.dll" />
+    <Path Id="0f14f4f1-6e37-4223-a462-88fe411263b9.OutputPathUri" Value="file:///C:/Users/jarab/Documents/FHNW/Semester 7/Projekt/repos/UWP-SDK_clone/Neosmartpen.Net/bin/Debug/Neosmartpen.Net.dll" />
+  </Paths>
+</DirectedGraph>

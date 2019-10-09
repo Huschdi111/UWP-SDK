@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Neosmartpen.Net.Support.Time" Collapsed="true">
+    <Position X="16.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAgEACAAAABAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Support\Time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Support.ByteConverter" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAAAAQBAAAAAAAAAAAAIAAAAAAEAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Support\ByteConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Support.ByteUtil" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gRCAAAAQABAAgBKIAAIBBAIAAQAAAIAAAAAEAAjAAEg=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Support\ByteUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Support.FloatConverter" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAI=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Support\FloatConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Support.PressureCalibration" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAQABBAAAQAAAAAAAAAQBAEAAAQAAAAABAAQA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Support\PressureCalibration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Support.PressureFilter" Collapsed="true">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAIBBAAAAAgAAAAAAFAAAAAAAAAABAAgAAg=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Support\PressureFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Dot" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAQAgQEAAACAAAAAAABAAAAAAAAgIEIYBA=</HashCode>
+      <FileName>Neosmartpen\Framework\Net\Data\Dot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Pds" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAgAQAAAAAAAAAAAAAAAAAAAAAAAAAIAAYBA=</HashCode>
+      <FileName>Neosmartpen\Framework\Net\Data\Pds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Stroke" Collapsed="true">
+    <Position X="15" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAIACAAAAQAAAEAAAAAAAAAAAAAAAAAAQAgIEAAAA=</HashCode>
+      <FileName>Neosmartpen\Framework\Net\Data\Stroke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.BatteryAlarmReceivedEventArgs" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\BatteryAlarmReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.ConnectedEventArgs" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAEAAAAAAAAAACAAAAKAAAACAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\ConnectedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.DotReceivedEventArgs" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\DotReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.ErrorDetectedEventArgs" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAiAAAACAACAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\ErrorDetectedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.OfflineDataListReceivedEventArgs" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\OfflineDataListReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.OfflineStrokeReceivedEventArgs" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAEAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\OfflineStrokeReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.PasswordRequestedEventArgs" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\PasswordRequestedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.PdsReceivedEventArgs" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\PdsReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.PenStatusReceivedEventArgs" Collapsed="true">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAgAAAAAggAACBCAAgCAgAAAAAAAARAAAkCSAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\PenStatusReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.ProgressChangeEventArgs" Collapsed="true">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\ProgressChangeEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.SimpleResultEventArgs" Collapsed="true">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\SimpleResultEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.OfflineData" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEABAAAAAAEgICUAAAAAQAAAASAAAAACAABIAAAg=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Version1\OfflineData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.OfflineDataParser" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBAAAIARAwAABEAAAQAQAoEkFAEIAAAQCABAAAgE=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Version1\OfflineDataParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.OfflineDataSerializer" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoAAAAAAgBAAAAAAAIAAEAAAAAQAAAoABAAAAAAAAg=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Version1\OfflineDataSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.OfflineWorker" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MUAAAAAAACEABAAAAFAIAgAECAAAIUAAAAAAAASgEQg=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Version1\OfflineWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.PenClientParserV1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Gxzzi7ItE+9k54KFE1oU4tIAT86xIXfNq7W6M5ELSyk=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Version1\PenClientParserV1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Neosmartpen.Net.Chunk" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAgIAAACAAAADAAAAIQAAABBAAAAAAAAQAAAgCAAE=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Chunk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.ImageProcessErrorInfo" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQAAAABAAAAAAAAACAAAAAAgAAAABAAAAAABIAIA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\ImageProcessErrorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.ImageProcessingInfo" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAgAAAAgAAQAABAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\ImageProcessingInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.OfflineDataInfo" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAkAAAAAAAAAAAAAAAAAAAAAIEAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\OfflineDataStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.OfflineDataFile" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAQAAAAAAAAAAAAEAAAAAAABAAIFAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\OfflineDataStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Packet" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAABYAABBIMAAAABAQAAQAAABAAgAEAAAiAAEA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Packet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Neosmartpen.Net.PenClient" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAAAAAAgAAAACAAAAAQgAgAAQQQAAAAECAEAABA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\PenClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Neosmartpen.Net.PenController" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAkME4hEEpkQAAEGBIFkIFEgDYAoTINOewSggACUyQ=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\PenController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Neosmartpen.Net.PenRequestException" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\PenController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.RequestIsUnreached" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\PenController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.UnavailableRequest" Collapsed="true">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\PenController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.PenControllerEx" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\PenControllerEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.PenProfile" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCiAAIAABBBAAgEACAAAAQCABAAgAAAAAAAAACAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\PenProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Protocols" Collapsed="true">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAABAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Protocols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Bluetooth.BluetoothPenClient" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACwQJMEmCCEICEAAY4IAAIAATIwAAAAgAUAGQAOAEAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Bluetooth\BluetoothPenClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Bluetooth.PenInformation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQiAAAAAACAAICEAAAAAARCgAAMAFAAAAAQAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Bluetooth\PenInfomation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Neosmartpen.Net.Bluetooth.PenUpdateInformation" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAABAAAAAAAAAAAAAAACAAAAAEAAAAAQAAgAAgA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Bluetooth\PenInfomation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Encryption.AES256Chiper" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEABAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Encryption\AES256Chiper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Encryption.PrivateKey" Collapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgAAgAAAAAAAAAABAEAABIQCIAAAEgAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Encryption\PrivateKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Encryption.PublicKey" Collapsed="true">
+    <Position X="9.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAABAEAABIQAIAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Encryption\PublicKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Encryption.RSAChiper" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAABAAYAAAAAQAABAAAUAAQAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Encryption\RSAChiper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neosmartpen.Net.Filter.FilterForPaper" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAQBAAQAAAAAAAAABDQQgCCAAAAAAAEABAAQAIw=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Filter\FilterForPaper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Neosmartpen.Net.IPenClient" Collapsed="true">
+    <Position X="9.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQgAgAAAAQAAAAEAAEAAAA=</HashCode>
+      <FileName>Neosmartpen\Framework\Net\Client\IPenClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neosmartpen.Net.IPenController" Collapsed="true">
+    <Position X="13.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAABAAAAAABIAAAAAAAAAACA=</HashCode>
+      <FileName>Neosmartpen\Framework\Net\Client\IPenController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neosmartpen.Net.IPacket" Collapsed="true">
+    <Position X="8" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAABIAABBIMAAAABAQAAAAAAAAAAAAAAAiAAEA=</HashCode>
+      <FileName>Neosmartpen\Framework\Net\IPacket.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neosmartpen.Net.IPenControllerEvent" Collapsed="true">
+    <Position X="15" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAAhEApgQAAEAAIEgIAAAAAAICAJCaAQAgAAAwA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\IPenControllerEvent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neosmartpen.Net.OfflineWorkResponseHandler" Collapsed="true">
+    <Position X="16.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Version1\OfflineWorker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neosmartpen.Net.IPenClientParser" Collapsed="true">
+    <Position X="11.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABACA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\IPenClientParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Neosmartpen.Net.DotTypes" Collapsed="true">
+    <Position X="9.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAEAAAAAAAAEAAACACAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Framework\Net\Data\Dot.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Neosmartpen.Net.ErrorType" Collapsed="true">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAEAQAAAAAAAAAAAABAAAAAAgAAAAAAAE=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\Event\ErrorDetectedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Neosmartpen.Net.DataTransmissionType" Collapsed="true">
+    <Position X="8" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\DataTransmissionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Neosmartpen.Net.UsbMode" Collapsed="true">
+    <Position X="13.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Neosmartpen\Implementation\Net\Client\UsbMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
