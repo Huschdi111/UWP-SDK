@@ -5,8 +5,90 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Grapholize_Prototype"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Grapholize" Height="800" Width="1200">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" />
+                <MenuItem Header="_Open" />
+                <MenuItem Header="_Save" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Settings">
+                <MenuItem Header="Pen Connection"/>
+                <MenuItem Header="Pen and Page Settings"/> <!--Only available when pen is connected-->
+            </MenuItem>
+        </Menu>
+        <Grid Background="#FFE6E6E6" x:Name="mainGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Canvas Grid.Column="0" Background="White" Margin="10,10,10,10.5"></Canvas>
+
+            <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" BorderBrush="Black" BorderThickness="5"/>
+            <Grid Grid.Column="2" x:Name="subGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Canvas x:Name="PositioningCanvas" Margin="10,10,10,10.5" Grid.Column="0" Background="White">
+                    <Canvas x:Name="DetailCanvas">
+                        <!--The DetailCanvas shows the selection of the FullView Canvas.-->
+                    </Canvas>
+                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Background="WhiteSmoke" Canvas.Right="10" Canvas.Top="10">
+                        <Label FontWeight="Bold">Detail Options</Label>
+                        <CheckBox IsChecked="True">Colorized strokes</CheckBox>
+                        <CheckBox>Show acceleration</CheckBox>
+                        <CheckBox>Show hover</CheckBox>
+                    </StackPanel>
+                </Canvas>
+                <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" BorderBrush="Black" BorderThickness="5"/>
+                <ScrollViewer Grid.Row="2" Margin="10,10,10,10.5">
+                    <StackPanel x:Name="Timeline_Panel" Background="White" >
+                        
+                        <!--Idea: Create a new type of panel that contains the timeline and a button to create new timelines-->
+                        <!--These grids are just for prototyping purposes but show what such a control could look like.-->
+                        <!--#region PrototypeGrids-->
+                        <Grid Margin="10,10,10,10.5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Button Grid.Row="1">Add new timeline below</Button>
+                        </Grid>
+                        <Grid Margin="10,10,10,10.5">
+                            <Grid.RowDefinitions  >
+                                <RowDefinition Height="100"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Button Grid.Row="1">Add new timeline below</Button>
+                        </Grid>
+                        <Grid Margin="10,10,10,10.5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Button Grid.Row="1">Add new timeline below</Button>
+                        </Grid>
+                        <Grid Margin="10,10,10,10.5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Button Grid.Row="1">Add new timeline below</Button>
+                        </Grid>
+                        <!--#endregion-->
+                        
+                    </StackPanel>
+                </ScrollViewer>
+                
+            </Grid>
+        </Grid>
+    </DockPanel>
+    
 </Window>
