@@ -14,65 +14,123 @@ namespace Grapholize_Prototype
         public PageDataLoader(string fileName) {
             this.fileName = fileName;
             filePointer = new FileStream(fileName, FileMode.Open);
-            //TODO check if the file is a neo file (identifier at the beginning)
-            byte[] neoSignalWord = new byte[3];
-            filePointer.Read(neoSignalWord, 0, 3);
-            string signalWord = Encoding.UTF8.GetString(neoSignalWord, 0, neoSignalWord.Length);
-            if(signalWord.Equals("neo")) {
-                Console.WriteLine("this is amazing");
+            if (IsFileValid())
+            {
+                //TODO Exctract other useful information
+                strokes = new List<Stroke>();
+                filePointer.Seek(40, SeekOrigin.Begin);
+                byte[] numOfStrokesBytes = new byte[4];
+                filePointer.Read(numOfStrokesBytes, 0, 4);
+                uint numOfStrokes = ByteArrayToUIntLSF(numOfStrokesBytes);
+                ParseData(numOfStrokes);
             }
-            filePointer.Seek(40, SeekOrigin.Begin);
+            else { 
+                //TODO Throw a parser Exception
+            }
+           
         }
 
         ~PageDataLoader() {
             filePointer.Close();
         }
 
-
-        private void ParseData() {
-            uint numOfStrokes = 0;
-            for (uint i = 0; i < numOfStrokes; i++) {
-                Stroke stroke = ReadStroke();
-                strokes.Add(stroke);
-                JumpAmount(18);
-            }
+        private void ParseData(uint numOfStrokes) {
+           for (uint i = 0; i < numOfStrokes; i++) {
+                ReadStroke();
+           }
         }
 
-        private Stroke ReadStroke() {
+        private void ReadStroke() {
             Stroke stroke = new Stroke(1, 1, 1, 1);
-            byte[] dotData = new byte[18];
-            filePointer.Read(dotData, 0, 18);
-            return stroke;
+            int signalBit = filePointer.ReadByte();
+            if (signalBit == 1) {
+                return; //skip voice memos
+            }
+            JumpAmount(5); //jump over type and thickness
+            byte[] integerBuffer = new byte[4];
+            byte[] longBuffer = new byte[8];
+            //Read Number of dots
+            filePointer.Read(integerBuffer, 0, 4);
+            uint numOfDots = ByteArrayToUIntLSF(integerBuffer);
+            //Read Timestamps
+            filePointer.Read(longBuffer, 0, 8);
+            long timeStamp = ByteArrayToLongLSF(longBuffer);
+            //Read Dots
+            Console.WriteLine("signal bit : " + signalBit 
+                + " numOfDots : " + numOfDots 
+                + " timestamp : " + timeStamp);
+            ReadDots(stroke, timeStamp, numOfDots);
+            strokes.Add(stroke);
         }
 
         /*Fills Stroke Object with dots while advancing the filePointer*/
-        private void ReadDots(Stroke stroke, long lastTimeStamp, long numberOfDots) {
+        private void ReadDots(Stroke stroke, long lastTimeStamp, uint numberOfDots) {
             /* total 13Bytes
              * x float 4Bytes
              * y float 4Bytes
              * pressure 4Bytes
              * timeDiff 1Byte
              */
-            byte timeDiff = 1;
-            byte[] dotData = new byte[13];
+            byte[] floatBuffer = new byte[4];
             for (long i = 0; i < numberOfDots; i++) {
-                //TODO read 13Bytes
-                filePointer.Read(dotData, 0, 13);
                 Dot.Builder dotBuilder = new Dot.Builder();
-                //TODO Read floats from dotData
-                dotBuilder = dotBuilder.coord(1, 1);
+                //TODO normalisierung mit ein rechnens
+                filePointer.Read(floatBuffer, 0, 4);
+                float x = ByteArrayToFloat(floatBuffer);
+                filePointer.Read(floatBuffer, 0, 4);
+                float y = ByteArrayToFloat(floatBuffer);
+                dotBuilder = dotBuilder.coord(x, y);
                 //TODO Read force from dotData
-                dotBuilder = dotBuilder.force(1);
-                //TODO Read timestamps from dotData
+                JumpAmount(4); //skip pressure
+                /*byte[] pressureBytes = ReadBytesFromArray(dotData, 8, 4);
+                float pressure = ByteArrayToFloat(pressureBytes);
+                dotBuilder = dotBuilder.force(pressure);*/
+                int timeDiff = filePointer.ReadByte();
                 dotBuilder = dotBuilder.timestamp(lastTimeStamp + timeDiff);
                 stroke.Add(dotBuilder.Build());
-                JumpAmount(13);
             }
         }
 
-        private void JumpAmount(long byteCount) {
-            filePointer.Seek(byteCount,SeekOrigin.Current);
+        private bool IsFileValid() {
+            //TODO Check other hints that might prove the validity of the file
+            byte[] neoSignalWord = new byte[3];
+            filePointer.Read(neoSignalWord, 0, 3);
+            string signalWord = Encoding.ASCII.GetString(neoSignalWord, 0, neoSignalWord.Length);
+            return signalWord.Equals("neo");
         }
-        
+
+        private void JumpAmount(long byteCount) {
+            filePointer.Seek(byteCount, SeekOrigin.Current);
+        }
+
+        //TODO extract all methods below to a utility function
+        //TODO eliminate code duplication
+        //Geht nach dem Least Significant byte Reihenfolge vor
+        private uint ByteArrayToUIntLSF(byte[] bytes) {
+            uint result = 0;
+            for(byte i = 0; i < 4; i++) {
+                uint temp = bytes[i];
+                temp = temp << i*8;
+                result += temp;
+            }
+            return result;
+        }
+
+        private long ByteArrayToLongLSF(byte[] bytes) {
+            long result = 0;
+            for (byte i = 0; i < 8; i++) {
+                long temp = bytes[i];
+                temp = temp << i * 8;
+                result += temp;
+            }
+            return result;
+        }
+
+        private float ByteArrayToFloat(byte[] bytes) {
+            if (!System.BitConverter.IsLittleEndian) {
+                Array.Reverse(bytes);
+            }
+            return System.BitConverter.ToSingle(bytes, 0);
+        }
     }
 }

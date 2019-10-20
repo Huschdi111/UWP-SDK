@@ -24,7 +24,7 @@ namespace Grapholize_Prototype
         {
             InitializeComponent();
             PageDataLoader pageLoader = 
-                new PageDataLoader(@"C:\Users\lukat\Desktop\Lukas Semester 7\bachelor\Lukas_Müller_Test.neonotes");
+                new PageDataLoader(@"C:\Users\lukat\Desktop\page.data");
         }
     }
 }
