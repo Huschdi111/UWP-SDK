@@ -23,6 +23,8 @@ namespace Grapholize_Prototype
         public MainWindow()
         {
             InitializeComponent();
+            PageDataLoader pageLoader = 
+                new PageDataLoader(@"C:\Users\lukat\Desktop\Lukas Semester 7\bachelor\Lukas_Müller_Test.neonotes");
         }
     }
 }
