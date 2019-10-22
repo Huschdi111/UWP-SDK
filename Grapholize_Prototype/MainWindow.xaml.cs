@@ -24,7 +24,7 @@ namespace Grapholize_Prototype
         {
             InitializeComponent();
             PageDataLoader pageLoader = 
-                new PageDataLoader(@"C:\Users\lukat\Desktop\page.data");
+                new PageDataLoader(@"C:\Users\lukat\Desktop\page_modified.data");
         }
     }
 }

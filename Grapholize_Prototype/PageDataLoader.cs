@@ -22,10 +22,6 @@ namespace Grapholize_Prototype
                 byte[] numOfStrokesBytes = new byte[4];
                 filePointer.Read(numOfStrokesBytes, 0, 4);
                 int numOfStrokes = ByteArrayToUIntLSF(numOfStrokesBytes);
-                Console.WriteLine(
-                    "byte_1: " + numOfStrokesBytes[0] 
-                    + " byte_2: " + numOfStrokesBytes[1]
-                );
                 ParseData(numOfStrokes);
             }
             else { 
@@ -43,6 +39,11 @@ namespace Grapholize_Prototype
            for (int i = 0; i < numOfStrokes; i++) {
                 ReadStroke();
            }
+           Stroke[] stroky = strokes.ToArray();
+           Stroke stroke = stroky[30];
+            foreach (Dot dot in stroke) {
+                Console.WriteLine("X:: " + dot.X + " Y:: " + dot.Y + " pressure:: " + dot.Force);
+            }
         }
 
         private void ReadStroke() {
@@ -56,17 +57,12 @@ namespace Grapholize_Prototype
             byte[] integerBuffer = new byte[4];
             byte[] longBuffer = new byte[8];
             //Read Number of dots
-            int read4_int = filePointer.Read(integerBuffer, 0, 4);
+            filePointer.Read(integerBuffer, 0, 4);
             int numOfDots = ByteArrayToUIntLSF(integerBuffer);
             //Read Timestamps
-            int read8_long = filePointer.Read(longBuffer, 0, 8);
+            filePointer.Read(longBuffer, 0, 8);
             long timeStamp = ByteArrayToLongLSF(longBuffer);
             //Read Dots
-            Console.WriteLine("signal bit : " + signalBit 
-                + " numOfDots : " + numOfDots 
-                + " timestamp : " + timeStamp
-                + " read8_long : " + read8_long
-                + " read4_int : " + read4_int);
             ReadDots(stroke, timeStamp, numOfDots);
             strokes.Add(stroke);
         }
@@ -83,34 +79,24 @@ namespace Grapholize_Prototype
             byte[] floatBuffer = new byte[4];
             for (int i = 0; i < numberOfDots; i++) {
                 Dot.Builder dotBuilder = new Dot.Builder();
-                //TODO normalisierung mit ein rechnens
-                int read4_1 = filePointer.Read(floatBuffer, 0, 4);
+                //TODO normalisierung der x , y Koordinaten, überhaupt nötig bei M1 Stift?
+                filePointer.Read(floatBuffer, 0, 4);
                 float x = ByteArrayToFloat(floatBuffer);
-                int read4_2 = filePointer.Read(floatBuffer, 0, 4);
+                filePointer.Read(floatBuffer, 0, 4);
                 float y = ByteArrayToFloat(floatBuffer);
                 dotBuilder = dotBuilder.coord(x, y);
                 //TODO Read force from dotData
-                JumpAmount(4); //skip pressure bytes
-                /*byte[] pressureBytes = ReadBytesFromArray(dotData, 8, 4);
-                float pressure = ByteArrayToFloat(pressureBytes);
-                dotBuilder = dotBuilder.force(pressure);*/
+                JumpAmount(4);
+                //float pressure = filePointer.Read(floatBuffer, 0, 4); //skip pressure bytes
+                //dotBuilder = dotBuilder.force(pressure);
                 int timeDiff = filePointer.ReadByte();
                 dotBuilder = dotBuilder.timestamp(lastTimeStamp + timeDiff);
                 stroke.Add(dotBuilder.Build());
-                Console.WriteLine("x : " + x
-                    + " y : " +  y
-                    + " timestamp : " + timeDiff
-                    + " read 4_1 : " + read4_1
-                    + " read 4_2 : " + read4_2);
             }
-            filePointer.Read(signalBuffer, 0, 3);
-            signalBuffer[3] = 0;
-            //Check signal HEX: 02 00 01 => dec(little endian) 65538
-            int signalInteger = ByteArrayToUIntLSF(signalBuffer);
-            if (signalInteger == 65538) {
-                Console.WriteLine("this is a valid stroke");
-            }
-
+            
+            int extraDataNum = filePointer.ReadByte();
+            if (extraDataNum == 0) JumpAmount(-1); //Reset the read ahead
+            JumpAmount(extraDataNum); // Skip the extra data if it exists
         }
 
         private bool IsFileValid() {
@@ -149,9 +135,7 @@ namespace Grapholize_Prototype
         }
 
         private float ByteArrayToFloat(byte[] bytes) {
-            if (!System.BitConverter.IsLittleEndian) {
-                Array.Reverse(bytes);
-            }
+            if (!System.BitConverter.IsLittleEndian) Array.Reverse(bytes);
             return System.BitConverter.ToSingle(bytes, 0);
         }
     }
