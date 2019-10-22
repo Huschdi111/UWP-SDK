@@ -21,11 +21,16 @@ namespace Grapholize_Prototype
                 filePointer.Seek(40, SeekOrigin.Begin);
                 byte[] numOfStrokesBytes = new byte[4];
                 filePointer.Read(numOfStrokesBytes, 0, 4);
-                uint numOfStrokes = ByteArrayToUIntLSF(numOfStrokesBytes);
+                int numOfStrokes = ByteArrayToUIntLSF(numOfStrokesBytes);
+                Console.WriteLine(
+                    "byte_1: " + numOfStrokesBytes[0] 
+                    + " byte_2: " + numOfStrokesBytes[1]
+                );
                 ParseData(numOfStrokes);
             }
             else { 
                 //TODO Throw a parser Exception
+                //TODO check that the O(x) time is not overdrawn;
             }
            
         }
@@ -34,8 +39,8 @@ namespace Grapholize_Prototype
             filePointer.Close();
         }
 
-        private void ParseData(uint numOfStrokes) {
-           for (uint i = 0; i < numOfStrokes; i++) {
+        private void ParseData(int numOfStrokes) {
+           for (int i = 0; i < numOfStrokes; i++) {
                 ReadStroke();
            }
         }
@@ -44,51 +49,68 @@ namespace Grapholize_Prototype
             Stroke stroke = new Stroke(1, 1, 1, 1);
             int signalBit = filePointer.ReadByte();
             if (signalBit == 1) {
-                return; //skip voice memos
+                JumpAmount(108); //Jump the length of a voice memo
+                return;
             }
             JumpAmount(5); //jump over type and thickness
             byte[] integerBuffer = new byte[4];
             byte[] longBuffer = new byte[8];
             //Read Number of dots
-            filePointer.Read(integerBuffer, 0, 4);
-            uint numOfDots = ByteArrayToUIntLSF(integerBuffer);
+            int read4_int = filePointer.Read(integerBuffer, 0, 4);
+            int numOfDots = ByteArrayToUIntLSF(integerBuffer);
             //Read Timestamps
-            filePointer.Read(longBuffer, 0, 8);
+            int read8_long = filePointer.Read(longBuffer, 0, 8);
             long timeStamp = ByteArrayToLongLSF(longBuffer);
             //Read Dots
             Console.WriteLine("signal bit : " + signalBit 
                 + " numOfDots : " + numOfDots 
-                + " timestamp : " + timeStamp);
+                + " timestamp : " + timeStamp
+                + " read8_long : " + read8_long
+                + " read4_int : " + read4_int);
             ReadDots(stroke, timeStamp, numOfDots);
             strokes.Add(stroke);
         }
 
         /*Fills Stroke Object with dots while advancing the filePointer*/
-        private void ReadDots(Stroke stroke, long lastTimeStamp, uint numberOfDots) {
+        private void ReadDots(Stroke stroke, long lastTimeStamp, int numberOfDots) {
             /* total 13Bytes
              * x float 4Bytes
              * y float 4Bytes
              * pressure 4Bytes
              * timeDiff 1Byte
              */
+            byte[] signalBuffer = new byte[4];
             byte[] floatBuffer = new byte[4];
-            for (long i = 0; i < numberOfDots; i++) {
+            for (int i = 0; i < numberOfDots; i++) {
                 Dot.Builder dotBuilder = new Dot.Builder();
                 //TODO normalisierung mit ein rechnens
-                filePointer.Read(floatBuffer, 0, 4);
+                int read4_1 = filePointer.Read(floatBuffer, 0, 4);
                 float x = ByteArrayToFloat(floatBuffer);
-                filePointer.Read(floatBuffer, 0, 4);
+                int read4_2 = filePointer.Read(floatBuffer, 0, 4);
                 float y = ByteArrayToFloat(floatBuffer);
                 dotBuilder = dotBuilder.coord(x, y);
                 //TODO Read force from dotData
-                JumpAmount(4); //skip pressure
+                JumpAmount(4); //skip pressure bytes
                 /*byte[] pressureBytes = ReadBytesFromArray(dotData, 8, 4);
                 float pressure = ByteArrayToFloat(pressureBytes);
                 dotBuilder = dotBuilder.force(pressure);*/
                 int timeDiff = filePointer.ReadByte();
                 dotBuilder = dotBuilder.timestamp(lastTimeStamp + timeDiff);
                 stroke.Add(dotBuilder.Build());
+                Console.WriteLine("x : " + x
+                    + " y : " +  y
+                    + " timestamp : " + timeDiff
+                    + " read 4_1 : " + read4_1
+                    + " read 4_2 : " + read4_2);
             }
+            filePointer.Read(signalBuffer, 0, 3);
+            signalBuffer[3] = 0;
+            //Check signal HEX: 02 00 01 => dec(little endian) 65538
+            int signalInteger = ByteArrayToUIntLSF(signalBuffer);
+            if (signalInteger == 65538) {
+                Console.WriteLine("this is a valid stroke");
+            }
+
         }
 
         private bool IsFileValid() {
@@ -106,10 +128,10 @@ namespace Grapholize_Prototype
         //TODO extract all methods below to a utility function
         //TODO eliminate code duplication
         //Geht nach dem Least Significant byte Reihenfolge vor
-        private uint ByteArrayToUIntLSF(byte[] bytes) {
-            uint result = 0;
+        private int ByteArrayToUIntLSF(byte[] bytes) {
+            int result = 0;
             for(byte i = 0; i < 4; i++) {
-                uint temp = bytes[i];
+                int temp = bytes[i];
                 temp = temp << i*8;
                 result += temp;
             }
