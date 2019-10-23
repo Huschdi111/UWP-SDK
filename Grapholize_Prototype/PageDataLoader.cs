@@ -5,28 +5,43 @@ using System.Text;
 
 namespace Grapholize_Prototype 
 {
+
+    /* author:: Lukas Müller
+     * e-mail:: lukatoni_mueller@hotmail.com
+     * last-update:: 23.10.2019
+     * This Code is only guaranteed to be compatible for the neopen models N2 and M1
+    */
     public class PageDataLoader
     {
         FileStream filePointer;
-        string fileName;
         List<Stroke> strokes;
 
         public PageDataLoader(string fileName) {
-            this.fileName = fileName;
-            filePointer = new FileStream(fileName, FileMode.Open);
-            if (IsFileValid())
-            {
-                //TODO Exctract other useful information
+            filePointer = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+            byte[] byteBuffer = new byte[4];
+            byte[] byteLongBuffer = new byte[8];
+            if (IsFileValid()) { 
                 strokes = new List<Stroke>();
-                filePointer.Seek(40, SeekOrigin.Begin);
-                byte[] numOfStrokesBytes = new byte[4];
-                filePointer.Read(numOfStrokesBytes, 0, 4);
-                int numOfStrokes = ByteArrayToUIntLSF(numOfStrokesBytes);
-                ParseData(numOfStrokes);
+                int fileVersion = ReadInteger(byteBuffer);
+                JumpAmount(4); // Skip the noteId
+                int pageNum = ReadInteger(byteBuffer);
+                float page_width = ReadFloat(byteBuffer);
+                float page_height = ReadFloat(byteBuffer);
+                long createdTimeStamp = ReadLong(byteLongBuffer);
+                long modifiedTimeStamp = ReadLong(byteLongBuffer);
+                int dirtyBit = filePointer.ReadByte();
+                int numOfStrokes = ReadInteger(byteBuffer);
+                Console.WriteLine("fileVersion: " + fileVersion 
+                    + " pageNum: " + pageNum
+                    + " page_width: " + page_width
+                    + " page_height: " + page_height
+                    + " numOfStrokes: " + numOfStrokes);
+                ParseContentBody(numOfStrokes);
             }
             else { 
                 //TODO Throw a parser Exception
-                //TODO check that the O(x) time is not overdrawn;
+                //TODO check that the O(x) time is not overdrawn ::
+                //TODO parsing error infinite loop occured;
             }
            
         }
@@ -35,7 +50,9 @@ namespace Grapholize_Prototype
             filePointer.Close();
         }
 
-        private void ParseData(int numOfStrokes) {
+
+
+        private void ParseContentBody(int numOfStrokes) {
            for (int i = 0; i < numOfStrokes; i++) {
                 ReadStroke();
            }
@@ -47,48 +64,38 @@ namespace Grapholize_Prototype
         }
 
         private void ReadStroke() {
+            //TODO create a sensible first stroke
             Stroke stroke = new Stroke(1, 1, 1, 1);
             int signalBit = filePointer.ReadByte();
             if (signalBit == 1) {
-                JumpAmount(108); //Jump the length of a voice memo
+                JumpAmount(108); //Skip the length of a voice memo
                 return;
             }
-            JumpAmount(5); //jump over type and thickness
+            JumpAmount(5); //Skip over type and thickness
             byte[] integerBuffer = new byte[4];
             byte[] longBuffer = new byte[8];
-            //Read Number of dots
-            filePointer.Read(integerBuffer, 0, 4);
-            int numOfDots = ByteArrayToUIntLSF(integerBuffer);
+            //Read Number of Dots
+            int numOfDots = ReadInteger(integerBuffer);
             //Read Timestamps
-            filePointer.Read(longBuffer, 0, 8);
-            long timeStamp = ByteArrayToLongLSF(longBuffer);
+            long timeStamp = ReadLong(longBuffer);
             //Read Dots
             ReadDots(stroke, timeStamp, numOfDots);
             strokes.Add(stroke);
         }
 
         /*Fills Stroke Object with dots while advancing the filePointer*/
-        private void ReadDots(Stroke stroke, long lastTimeStamp, int numberOfDots) {
-            /* total 13Bytes
-             * x float 4Bytes
-             * y float 4Bytes
-             * pressure 4Bytes
-             * timeDiff 1Byte
-             */
+        private void ReadDots(Stroke stroke, long lastTimeStamp, int numberOfDots) { 
             byte[] signalBuffer = new byte[4];
             byte[] floatBuffer = new byte[4];
             for (int i = 0; i < numberOfDots; i++) {
                 Dot.Builder dotBuilder = new Dot.Builder();
                 //TODO normalisierung der x , y Koordinaten, überhaupt nötig bei M1 Stift?
-                filePointer.Read(floatBuffer, 0, 4);
-                float x = ByteArrayToFloat(floatBuffer);
-                filePointer.Read(floatBuffer, 0, 4);
-                float y = ByteArrayToFloat(floatBuffer);
+                //(x or y dot code from N2) / MAX(width, height)
+                float x = ReadFloat(floatBuffer);
+                float y = ReadFloat(floatBuffer);
                 dotBuilder = dotBuilder.coord(x, y);
-                //TODO Read force from dotData
-                JumpAmount(4);
-                //float pressure = filePointer.Read(floatBuffer, 0, 4); //skip pressure bytes
-                //dotBuilder = dotBuilder.force(pressure);
+                int force = ReadInteger(floatBuffer); //this might be a shitty idea
+                dotBuilder = dotBuilder.force(force);
                 int timeDiff = filePointer.ReadByte();
                 dotBuilder = dotBuilder.timestamp(lastTimeStamp + timeDiff);
                 stroke.Add(dotBuilder.Build());
@@ -111,6 +118,22 @@ namespace Grapholize_Prototype
             filePointer.Seek(byteCount, SeekOrigin.Current);
         }
 
+        private long ReadLong(byte[] buffer)
+        {
+            filePointer.Read(buffer, 0, 8);
+            return ByteArrayToLongLSF(buffer);
+        }
+
+        private int ReadInteger(byte[] buffer)
+        {
+            filePointer.Read(buffer, 0, 4);
+            return ByteArrayToUIntLSF(buffer);
+        }
+
+        private float ReadFloat(byte[] buffer) {
+            filePointer.Read(buffer, 0, 4);
+            return ByteArrayToFloat(buffer);
+        }
         //TODO extract all methods below to a utility function
         //TODO eliminate code duplication
         //Geht nach dem Least Significant byte Reihenfolge vor

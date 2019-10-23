@@ -35,7 +35,7 @@ namespace Grapholize_Prototype
         public int Color { get; private set; }
 
         /// <summary>
-        /// Gets the timestamp of start point
+        /// Gets the timestamp of start pointS
         /// </summary>
         public long TimeStart { get; private set; }
 
@@ -72,7 +72,6 @@ namespace Grapholize_Prototype
             }
 
             TimeEnd = dot.Timestamp;
-
             base.Add(dot);
         }
 
