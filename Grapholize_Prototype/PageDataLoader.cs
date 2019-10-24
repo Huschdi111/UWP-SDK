@@ -17,6 +17,7 @@ namespace Grapholize_Prototype
         private List<Stroke> strokes;
         Page page;
         public PageDataLoader(string fileName) {
+            //TODO escape string
             filePointer = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             if (IsFileValid())
             {
@@ -141,7 +142,7 @@ namespace Grapholize_Prototype
             filePointer.Read(buffer, 0, 4);
             return ByteArrayToFloat(buffer);
         }
-        //TODO extract all methods below to a utility function
+        //TODO extract all methods below to a utility function class
         //TODO eliminate code duplication
         //Geht nach dem Least Significant byte Reihenfolge vor
         private int ByteArrayToUIntLSF(byte[] bytes) {
