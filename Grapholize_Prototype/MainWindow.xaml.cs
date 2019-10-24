@@ -23,6 +23,7 @@ namespace Grapholize_Prototype
         public MainWindow()
         {
             InitializeComponent();
+            PageDataLoader pdl = new PageDataLoader("Path");
         }
     }
 }
