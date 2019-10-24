@@ -54,6 +54,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Page.cs" />
+    <Compile Include="PageMetaData.cs" />
     <Compile Include="PressureCalibration.cs" />
     <Compile Include="Stroke.cs" />
     <Page Include="MainWindow.xaml">

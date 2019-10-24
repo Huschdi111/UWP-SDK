@@ -13,44 +13,51 @@ namespace Grapholize_Prototype
     */
     public class PageDataLoader
     {
-        FileStream filePointer;
-        List<Stroke> strokes;
-
+        private FileStream filePointer;
+        private List<Stroke> strokes;
+        Page page;
         public PageDataLoader(string fileName) {
             filePointer = new FileStream(fileName, FileMode.Open, FileAccess.Read);
-            byte[] byteBuffer = new byte[4];
-            byte[] byteLongBuffer = new byte[8];
-            if (IsFileValid()) { 
+            if (IsFileValid())
+            {
                 strokes = new List<Stroke>();
-                int fileVersion = ReadInteger(byteBuffer);
-                JumpAmount(4); // Skip the noteId
-                int pageNum = ReadInteger(byteBuffer);
-                float page_width = ReadFloat(byteBuffer);
-                float page_height = ReadFloat(byteBuffer);
-                long createdTimeStamp = ReadLong(byteLongBuffer);
-                long modifiedTimeStamp = ReadLong(byteLongBuffer);
-                int dirtyBit = filePointer.ReadByte();
-                int numOfStrokes = ReadInteger(byteBuffer);
-                Console.WriteLine("fileVersion: " + fileVersion 
-                    + " pageNum: " + pageNum
-                    + " page_width: " + page_width
-                    + " page_height: " + page_height
-                    + " numOfStrokes: " + numOfStrokes);
-                ParseContentBody(numOfStrokes);
+
+                PageMetaData metaData = ReadMetaData();
+
+                ParseContentBody(metaData.NumberOfStrokes);
+
+                page = new Page(metaData, strokes);
             }
-            else { 
+            else {
                 //TODO Throw a parser Exception
                 //TODO check that the O(x) time is not overdrawn ::
                 //TODO parsing error infinite loop occured;
             }
-           
+
         }
 
         ~PageDataLoader() {
             filePointer.Close();
         }
 
+        private PageMetaData ReadMetaData() {
+            byte[] byteBuffer = new byte[4];
+            byte[] byteLongBuffer = new byte[8];
+            int fileVersion = ReadInteger(byteBuffer);
+            int noteId = ReadInteger(byteBuffer);
+            int pageNum = ReadInteger(byteBuffer);
+            float pageWidth = ReadFloat(byteBuffer);
+            float pageHeight = ReadFloat(byteBuffer);
+            long createdTimeStamp = ReadLong(byteLongBuffer);
+            long modifiedTimeStamp = ReadLong(byteLongBuffer);
+            int dirtyBit = filePointer.ReadByte();
+            int numOfStrokes = ReadInteger(byteBuffer);
 
+           return new PageMetaData(fileVersion, pageNum, noteId
+                , pageWidth, pageHeight, createdTimeStamp
+                , modifiedTimeStamp, dirtyBit, numOfStrokes);
+
+        }
 
         private void ParseContentBody(int numOfStrokes) {
            for (int i = 0; i < numOfStrokes; i++) {
