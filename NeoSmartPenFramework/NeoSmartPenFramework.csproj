@@ -34,5 +34,67 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NeoSmartPen\Framework\Net\Client\IPenClient.cs" />
+    <Compile Include="NeoSmartPen\Framework\Net\Client\IPenController.cs" />
+    <Compile Include="NeoSmartPen\Framework\Net\Data\Dot.cs" />
+    <Compile Include="NeoSmartPen\Framework\Net\Data\Page.cs" />
+    <Compile Include="NeoSmartPen\Framework\Net\Data\PageDataLoader.cs" />
+    <Compile Include="NeoSmartPen\Framework\Net\Data\PageMetaData.cs" />
+    <Compile Include="NeoSmartPen\Framework\Net\Data\Pds.cs" />
+    <Compile Include="NeoSmartPen\Framework\Net\Data\Stroke.cs" />
+    <Compile Include="NeoSmartPen\Framework\Net\IPacket.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Bluetooth\BluetoothPenClient.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Bluetooth\PenInfomation.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Chunk.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\DataTransmissionType.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\BatteryAlarmReceivedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\ConnectedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\DotReceivedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\ErrorDetectedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\IPenControllerEvent.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\OfflineDataListReceivedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\OfflineStrokeReceivedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PasswordRequestedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PdsReceivedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PenProfile\PenProfileCreateEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PenProfile\PenProfileDeleteEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PenProfile\PenProfileDeleteValueEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PenProfile\PenProfileInfoEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PenProfile\PenProfileReadValueEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PenProfile\PenProfileReceivedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PenProfile\PenProfileWriteValueEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\PenStatusReceivedEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\ProgressChangeEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Event\SimpleResultEventArgs.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\ImageProcessErrorInfo.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\ImageProcessingInfo.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\IPenClientParser.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\OfflineDataStructure.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Packet.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\PenClient.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\PenController.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\PenControllerEx.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\PenProfile.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Protocols.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\UsbMode.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Version1\OfflineData.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Version1\OfflineDataParser.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Version1\OfflineDataSerializer.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Version1\OfflineWorker.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Version1\PenClientParserV1.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Client\Version2\PenClientParserV2.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Encryption\AES256Chiper.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Encryption\PrivateKey.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Encryption\PublicKey.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Encryption\RSAChiper.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Filter\FilterForPaper.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Support\ByteConverter.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Support\ByteUtil.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Support\FloatConverter.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Support\PressureCalibration.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Support\PressureFilter.cs" />
+    <Compile Include="NeoSmartPen\Implementation\Net\Support\Time.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

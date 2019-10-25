@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Grapholize_Prototype
+namespace Neosmartpen.Net
 {
 
     /* author:: Lukas Müller

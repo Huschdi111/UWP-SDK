@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Grapholize_Prototype 
+namespace Neosmartpen.Net
 {
 
     /* author:: Lukas Müller
