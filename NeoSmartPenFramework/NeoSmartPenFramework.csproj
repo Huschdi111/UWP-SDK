@@ -96,5 +96,9 @@
     <Compile Include="NeoSmartPen\Implementation\Net\Support\PressureFilter.cs" />
     <Compile Include="NeoSmartPen\Implementation\Net\Support\Time.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Windows" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

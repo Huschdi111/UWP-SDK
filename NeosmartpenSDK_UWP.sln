@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neosmartpen.UnitTest", "Neo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grapholize_Prototype", "Grapholize_Prototype\Grapholize_Prototype.csproj", "{6134BFCD-AFED-4E2A-9DAF-49D55048C161}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoSmartPenFramework", "NeoSmartPenFramework\NeoSmartPenFramework.csproj", "{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimelineFramework", "..\..\..\..\..\..\source\repos\TimelineFramework\TimelineFramework\TimelineFramework.csproj", "{A2B7417D-7EF0-4070-8983-30375C827FD4}"
 EndProject
 Global
@@ -99,22 +97,6 @@ Global
 		{6134BFCD-AFED-4E2A-9DAF-49D55048C161}.Release|x64.Build.0 = Release|Any CPU
 		{6134BFCD-AFED-4E2A-9DAF-49D55048C161}.Release|x86.ActiveCfg = Release|Any CPU
 		{6134BFCD-AFED-4E2A-9DAF-49D55048C161}.Release|x86.Build.0 = Release|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Debug|ARM.Build.0 = Debug|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Debug|x64.Build.0 = Debug|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Debug|x86.Build.0 = Debug|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Release|ARM.ActiveCfg = Release|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Release|ARM.Build.0 = Release|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Release|x64.ActiveCfg = Release|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Release|x64.Build.0 = Release|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Release|x86.ActiveCfg = Release|Any CPU
-		{D8BBF0B9-BC2A-4EA3-A632-4E026AFDFEFC}.Release|x86.Build.0 = Release|Any CPU
 		{A2B7417D-7EF0-4070-8983-30375C827FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2B7417D-7EF0-4070-8983-30375C827FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2B7417D-7EF0-4070-8983-30375C827FD4}.Debug|ARM.ActiveCfg = Debug|Any CPU

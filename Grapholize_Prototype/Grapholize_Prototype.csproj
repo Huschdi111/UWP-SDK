@@ -99,10 +99,6 @@
       <Project>{a2b7417d-7ef0-4070-8983-30375c827fd4}</Project>
       <Name>TimelineFramework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NeoSmartPenFramework\NeoSmartPenFramework.csproj">
-      <Project>{d8bbf0b9-bc2a-4ea3-a632-4e026afdfefc}</Project>
-      <Name>NeoSmartPenFramework</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

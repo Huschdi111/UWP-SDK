@@ -104,6 +104,9 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Neosmartpen\Framework\Net\Data\Page.cs" />
+    <Compile Include="Neosmartpen\Framework\Net\Data\PageDataLoader.cs" />
+    <Compile Include="Neosmartpen\Framework\Net\Data\PageMetaData.cs" />
     <Compile Include="Neosmartpen\Framework\Net\Data\Pds.cs" />
     <Compile Include="Neosmartpen\Implementation\Net\Client\DataTransmissionType.cs" />
     <Compile Include="Neosmartpen\Implementation\Net\Client\Event\ErrorDetectedEventArgs.cs" />
