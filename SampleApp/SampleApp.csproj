@@ -93,6 +93,11 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="Resources\Ring Note.neonotes\.vs\ProjectSettings.json" />
+    <None Include="Resources\Ring Note.neonotes\.vs\Ring Note.neonotes\v15\.suo" />
+    <None Include="Resources\Ring Note.neonotes\.vs\slnx.sqlite" />
+    <None Include="Resources\Ring Note.neonotes\.vs\VSWorkspaceState.json" />
+    <None Include="Resources\Ring Note.neonotes\Data\0152.page_store\page.data" />
     <None Include="SampleApp_TemporaryKey.pfx" />
     <None Include="project.json" />
     <None Include="www.neolab.kr.pfx" />
@@ -125,6 +130,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\background.jpg" />
+    <Content Include="Resources\Ring Note.neonotes\NoteInfo.xml" />
+    <Content Include="Resources\Ring Note.neonotes\Tag.xml" />
     <Page Include="Converters\Converters.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

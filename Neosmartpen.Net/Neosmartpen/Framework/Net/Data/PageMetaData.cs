@@ -13,7 +13,7 @@ namespace Neosmartpen.Net
      * This Code is only guaranteed to be compatible for the neopen models N2 and M1
      * 
      */
-    class PageMetaData
+    public class PageMetaData
     {
         public PageMetaData(int fileVersion, int pageNumber, int noteID
             , float pageWidth, float pageHeight, long createTimeStamp

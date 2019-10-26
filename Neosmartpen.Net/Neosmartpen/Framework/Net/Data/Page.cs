@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Neosmartpen.Net
 {
-    class Page
+    public class Page
     {
         public Page(PageMetaData metaData, List<Stroke> strokes) {
             this.MetaData = metaData;

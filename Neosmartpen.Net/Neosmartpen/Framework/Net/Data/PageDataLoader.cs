@@ -11,36 +11,37 @@ namespace Neosmartpen.Net
      * last-update:: 23.10.2019
      * This Code is only guaranteed to be compatible for the neopen models N2 and M1
     */
-    public class PageDataLoader
+    public static class PageDataLoader
     {
-        private FileStream filePointer;
-        private List<Stroke> strokes;
-        Page page;
-        public PageDataLoader(string fileName) {
+        private static FileStream filePointer;
+        //private List<Stroke> strokes;
+        //public Page Page { get; private set; }
+
+        public static Page LoadPage(string fileName) {
+
             filePointer = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             if (IsFileValid())
             {
-                strokes = new List<Stroke>();
+                //strokes = new List<Stroke>();
 
                 PageMetaData metaData = ReadMetaData();
 
-                ParseContentBody(metaData.NumberOfStrokes);
+                var strokes = ParseContentBody(metaData.NumberOfStrokes);
 
-                page = new Page(metaData, strokes);
+                filePointer.Dispose();
+                filePointer = null;
+                return new Page(metaData, strokes);
             }
             else {
                 //TODO Throw a parser Exception
                 //TODO check that the O(x) time is not overdrawn ::
                 //TODO parsing error infinite loop occured;
+                throw new FileLoadException("File could not be read.");
             }
 
         }
 
-        ~PageDataLoader() {
-            filePointer.Dispose();
-        }
-
-        private PageMetaData ReadMetaData() {
+        private static PageMetaData ReadMetaData() {
             byte[] byteBuffer = new byte[4];
             byte[] byteLongBuffer = new byte[8];
             int fileVersion = ReadInteger(byteBuffer);
@@ -59,24 +60,25 @@ namespace Neosmartpen.Net
 
         }
 
-        private void ParseContentBody(int numOfStrokes) {
-           for (int i = 0; i < numOfStrokes; i++) {
-                ReadStroke();
+        private static List<Stroke> ParseContentBody(int numOfStrokes) {
+            var result = new List<Stroke>();
+            for (int i = 0; i < numOfStrokes; i++) {
+                result.Add(ReadStroke());
            }
-           Stroke[] stroky = strokes.ToArray();
-           Stroke stroke = stroky[30];
-            foreach (Dot dot in stroke) {
-                //Console.WriteLine("X:: " + dot.X + " Y:: " + dot.Y + " pressure:: " + dot.Force);
-            }
+            return result;
+           //Stroke[] stroky = strokes.ToArray();
+           //Stroke stroke = stroky[30];
+           // foreach (Dot dot in stroke) {
+           //     //Console.WriteLine("X:: " + dot.X + " Y:: " + dot.Y + " pressure:: " + dot.Force);
+           // }
         }
 
-        private void ReadStroke() {
+        private static Stroke ReadStroke() {
             //TODO create a sensible first stroke
             Stroke stroke = new Stroke(1, 1, 1, 1);
             int signalBit = filePointer.ReadByte();
             if (signalBit == 1) {
                 JumpAmount(108); //Skip the length of a voice memo
-                return;
             }
             JumpAmount(5); //Skip over type and thickness
             byte[] integerBuffer = new byte[4];
@@ -87,11 +89,12 @@ namespace Neosmartpen.Net
             long timeStamp = ReadLong(longBuffer);
             //Read Dots
             ReadDots(stroke, timeStamp, numOfDots);
-            strokes.Add(stroke);
+            //strokes.Add(stroke);
+            return stroke;
         }
 
         /*Fills Stroke Object with dots while advancing the filePointer*/
-        private void ReadDots(Stroke stroke, long lastTimeStamp, int numberOfDots) { 
+        private static void ReadDots(Stroke stroke, long lastTimeStamp, int numberOfDots) { 
             byte[] signalBuffer = new byte[4];
             byte[] floatBuffer = new byte[4];
             for (int i = 0; i < numberOfDots; i++) {
@@ -113,7 +116,7 @@ namespace Neosmartpen.Net
             JumpAmount(extraDataNum); // Skip the extra data if it exists
         }
 
-        private bool IsFileValid() {
+        private static bool IsFileValid() {
             //TODO Check other hints that might prove the validity of the file
             byte[] neoSignalWord = new byte[3];
             filePointer.Read(neoSignalWord, 0, 3);
@@ -121,30 +124,30 @@ namespace Neosmartpen.Net
             return signalWord.Equals("neo");
         }
 
-        private void JumpAmount(long byteCount) {
+        private static void JumpAmount(long byteCount) {
             filePointer.Seek(byteCount, SeekOrigin.Current);
         }
 
-        private long ReadLong(byte[] buffer)
+        private static long ReadLong(byte[] buffer)
         {
             filePointer.Read(buffer, 0, 8);
             return ByteArrayToLongLSF(buffer);
         }
 
-        private int ReadInteger(byte[] buffer)
+        private static int ReadInteger(byte[] buffer)
         {
             filePointer.Read(buffer, 0, 4);
             return ByteArrayToUIntLSF(buffer);
         }
 
-        private float ReadFloat(byte[] buffer) {
+        private static float ReadFloat(byte[] buffer) {
             filePointer.Read(buffer, 0, 4);
             return ByteArrayToFloat(buffer);
         }
         //TODO extract all methods below to a utility function
         //TODO eliminate code duplication
         //Geht nach dem Least Significant byte Reihenfolge vor
-        private int ByteArrayToUIntLSF(byte[] bytes) {
+        private static int ByteArrayToUIntLSF(byte[] bytes) {
             int result = 0;
             for(byte i = 0; i < 4; i++) {
                 int temp = bytes[i];
@@ -154,7 +157,7 @@ namespace Neosmartpen.Net
             return result;
         }
 
-        private long ByteArrayToLongLSF(byte[] bytes) {
+        private static long ByteArrayToLongLSF(byte[] bytes) {
             long result = 0;
             for (byte i = 0; i < 8; i++) {
                 long temp = bytes[i];
@@ -164,7 +167,7 @@ namespace Neosmartpen.Net
             return result;
         }
 
-        private float ByteArrayToFloat(byte[] bytes) {
+        private static float ByteArrayToFloat(byte[] bytes) {
             if (!System.BitConverter.IsLittleEndian) Array.Reverse(bytes);
             return System.BitConverter.ToSingle(bytes, 0);
         }

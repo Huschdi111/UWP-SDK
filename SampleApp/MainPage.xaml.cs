@@ -24,8 +24,10 @@ namespace SampleApp
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class MainPage : Page, INotifyPropertyChanged
+	public sealed partial class MainPage : Windows.UI.Xaml.Controls.Page, INotifyPropertyChanged
 	{
+        private static String path = @"Resources\Ring Note.neonotes\Data\0152.page_store\page.data";
+
 		private ProgressDialog _progressDialog = new ProgressDialog();
 		private StorageFile mFile;
 		public ObservableCollection<NColor> colors;
@@ -113,6 +115,8 @@ namespace SampleApp
 			CurrentMacAddress = string.Empty;
 			CurrentStatus = AppStatus.Disconnected;
 			ClearKeyValuePenProfile();
+
+            var pl = PageDataLoader.LoadPage(path);
         }
 
 		public void InitColor()

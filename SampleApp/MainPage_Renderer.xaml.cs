@@ -10,7 +10,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace SampleApp
 {
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage : Windows.UI.Xaml.Controls.Page
     {
 		private static readonly int[] THICKNESS_LEVEL = { 1, 2, 5, 9, 18 };
 
