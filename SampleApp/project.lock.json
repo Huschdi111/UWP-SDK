@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "UAP,Version=v10.0.14393": {
+    "UAP,Version=v10.0.17763": {
       "MarkerMetro.Unity.Ionic.Zlib/2.0.0.14": {
         "type": "package",
         "compile": {
@@ -328,7 +328,7 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.AppContext.dll": {}
+          "ref/netstandard1.6/System.AppContext.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.AppContext.dll": {}
@@ -903,6 +903,10 @@
           "lib/win8/_._": {}
         },
         "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
           "runtimes/win/lib/netcore50/System.Net.Http.dll": {
             "assetType": "runtime",
             "rid": "win"
@@ -1419,7 +1423,7 @@
           "System.Runtime.Extensions": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Reflection.TypeExtensions.dll": {}
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.Reflection.TypeExtensions.dll": {}
@@ -1668,9 +1672,13 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
           "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll": {
             "assetType": "runtime",
             "rid": "win"
@@ -1693,10 +1701,14 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/_._": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -1776,6 +1788,10 @@
           "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.dll": {}
         },
         "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
           "runtimes/win/lib/netcore50/System.Security.Cryptography.X509Certificates.dll": {
             "assetType": "runtime",
             "rid": "win"
@@ -2174,14 +2190,14 @@
       },
       "Neosmartpen.Net/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "MarkerMetro.Unity.Ionic.Zlib": "2.0.0.14",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
         }
       }
     },
-    "UAP,Version=v10.0.14393/win10-arm": {
+    "UAP,Version=v10.0.17763/win10-arm": {
       "MarkerMetro.Unity.Ionic.Zlib/2.0.0.14": {
         "type": "package",
         "compile": {
@@ -2762,7 +2778,7 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.AppContext.dll": {}
+          "ref/netstandard1.6/System.AppContext.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.AppContext.dll": {}
@@ -3749,7 +3765,7 @@
           "System.Runtime.Extensions": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Reflection.TypeExtensions.dll": {}
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.Reflection.TypeExtensions.dll": {}
@@ -3969,7 +3985,7 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll": {}
@@ -3991,10 +4007,10 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/_._": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtime": {
-          "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {}
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.0.0": {
@@ -4451,14 +4467,14 @@
       },
       "Neosmartpen.Net/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "MarkerMetro.Unity.Ionic.Zlib": "2.0.0.14",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
         }
       }
     },
-    "UAP,Version=v10.0.14393/win10-arm-aot": {
+    "UAP,Version=v10.0.17763/win10-arm-aot": {
       "MarkerMetro.Unity.Ionic.Zlib/2.0.0.14": {
         "type": "package",
         "compile": {
@@ -5075,7 +5091,7 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.AppContext.dll": {}
+          "ref/netstandard1.6/System.AppContext.dll": {}
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.AppContext.dll": {}
@@ -6062,7 +6078,7 @@
           "System.Runtime.Extensions": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Reflection.TypeExtensions.dll": {}
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Reflection.TypeExtensions.dll": {}
@@ -6282,7 +6298,7 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll": {}
@@ -6304,10 +6320,10 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/_._": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtime": {
-          "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {}
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.0.0": {
@@ -6764,14 +6780,14 @@
       },
       "Neosmartpen.Net/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "MarkerMetro.Unity.Ionic.Zlib": "2.0.0.14",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
         }
       }
     },
-    "UAP,Version=v10.0.14393/win10-x64": {
+    "UAP,Version=v10.0.17763/win10-x64": {
       "MarkerMetro.Unity.Ionic.Zlib/2.0.0.14": {
         "type": "package",
         "compile": {
@@ -7361,7 +7377,7 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.AppContext.dll": {}
+          "ref/netstandard1.6/System.AppContext.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.AppContext.dll": {}
@@ -8348,7 +8364,7 @@
           "System.Runtime.Extensions": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Reflection.TypeExtensions.dll": {}
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.Reflection.TypeExtensions.dll": {}
@@ -8568,7 +8584,7 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll": {}
@@ -8590,10 +8606,10 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/_._": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtime": {
-          "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {}
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.0.0": {
@@ -9050,14 +9066,14 @@
       },
       "Neosmartpen.Net/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "MarkerMetro.Unity.Ionic.Zlib": "2.0.0.14",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
         }
       }
     },
-    "UAP,Version=v10.0.14393/win10-x64-aot": {
+    "UAP,Version=v10.0.17763/win10-x64-aot": {
       "MarkerMetro.Unity.Ionic.Zlib/2.0.0.14": {
         "type": "package",
         "compile": {
@@ -9683,7 +9699,7 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.AppContext.dll": {}
+          "ref/netstandard1.6/System.AppContext.dll": {}
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.AppContext.dll": {}
@@ -10670,7 +10686,7 @@
           "System.Runtime.Extensions": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Reflection.TypeExtensions.dll": {}
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Reflection.TypeExtensions.dll": {}
@@ -10890,7 +10906,7 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll": {}
@@ -10912,10 +10928,10 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/_._": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtime": {
-          "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {}
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.0.0": {
@@ -11372,14 +11388,14 @@
       },
       "Neosmartpen.Net/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "MarkerMetro.Unity.Ionic.Zlib": "2.0.0.14",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
         }
       }
     },
-    "UAP,Version=v10.0.14393/win10-x86": {
+    "UAP,Version=v10.0.17763/win10-x86": {
       "MarkerMetro.Unity.Ionic.Zlib/2.0.0.14": {
         "type": "package",
         "compile": {
@@ -11969,7 +11985,7 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.AppContext.dll": {}
+          "ref/netstandard1.6/System.AppContext.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.AppContext.dll": {}
@@ -12956,7 +12972,7 @@
           "System.Runtime.Extensions": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Reflection.TypeExtensions.dll": {}
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.Reflection.TypeExtensions.dll": {}
@@ -13176,7 +13192,7 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll": {}
@@ -13198,10 +13214,10 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/_._": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtime": {
-          "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {}
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.0.0": {
@@ -13658,14 +13674,14 @@
       },
       "Neosmartpen.Net/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "MarkerMetro.Unity.Ionic.Zlib": "2.0.0.14",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
         }
       }
     },
-    "UAP,Version=v10.0.14393/win10-x86-aot": {
+    "UAP,Version=v10.0.17763/win10-x86-aot": {
       "MarkerMetro.Unity.Ionic.Zlib/2.0.0.14": {
         "type": "package",
         "compile": {
@@ -14291,7 +14307,7 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.AppContext.dll": {}
+          "ref/netstandard1.6/System.AppContext.dll": {}
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.AppContext.dll": {}
@@ -15278,7 +15294,7 @@
           "System.Runtime.Extensions": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Reflection.TypeExtensions.dll": {}
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Reflection.TypeExtensions.dll": {}
@@ -15498,7 +15514,7 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll": {}
@@ -15520,10 +15536,10 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.4/_._": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtime": {
-          "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {}
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.0.0": {
@@ -15980,7 +15996,7 @@
       },
       "Neosmartpen.Net/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.10586",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "MarkerMetro.Unity.Ionic.Zlib": "2.0.0.14",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
@@ -15990,10 +16006,11 @@
   },
   "libraries": {
     "MarkerMetro.Unity.Ionic.Zlib/2.0.0.14": {
-      "sha512": "nR3u+rKJCmhrrRA6Q+4wmJCI8KWpcIsKqinP6r9iqpO9KI4iG0Z/6COv2dCscegnj9/rNxTQ2qIVs9Xygbq5Xg==",
+      "sha512": "n81L/LXsSWn40fu8Kr8VAyCyCZt0Jj/jUbAQxcaXnRi7TWXTPePj+vhq3ykwn84VJ3qiAINatbcwnz/UrGjwfA==",
       "type": "package",
       "path": "markermetro.unity.ionic.zlib/2.0.0.14",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/Ionic.ZLib.dll",
         "lib/net35/Ionic.ZLib.dll",
@@ -22170,10 +22187,11 @@
       ]
     },
     "Win2D.uwp/1.19.0": {
-      "sha512": "Dc2OmDM6l02eeTCFXTcW0sicpmIaHE4vfFoVZwHIYfdRfbTCOILqD8ADqTA0wz518fjjV9VtxUcTQ3JEZbIbTQ==",
+      "sha512": "pLL/gLb3uY75IlswAKzOvQnwwiGrMxZyBl2DbJOjuzG6SOWMp0sg+tkj+HZU8uyQ8jIdAbOE0Iu5+z9zyT5E6Q==",
       "type": "package",
       "path": "win2d.uwp/1.19.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "Win2d.githash.txt",
         "build/native/Win2D.uwp.targets",
@@ -22199,22 +22217,22 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Win2D.uwp >= 1.19.0"
     ],
-    "UAP,Version=v10.0.14393": []
+    "UAP,Version=v10.0.17763": []
   },
   "packageFolders": {
-    "C:\\Users\\jarab\\.nuget\\packages\\": {}
+    "C:\\Users\\lukat\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarab\\Documents\\FHNW\\Semester 7\\Projekt\\repos\\UWP-SDK_clone\\SampleApp\\SampleApp.csproj",
+      "projectUniqueName": "C:\\Users\\lukat\\Repos\\UWP-SDK\\SampleApp\\SampleApp.csproj",
       "projectName": "SampleApp",
-      "projectPath": "C:\\Users\\jarab\\Documents\\FHNW\\Semester 7\\Projekt\\repos\\UWP-SDK_clone\\SampleApp\\SampleApp.csproj",
-      "projectJsonPath": "C:\\Users\\jarab\\Documents\\FHNW\\Semester 7\\Projekt\\repos\\UWP-SDK_clone\\SampleApp\\project.json",
-      "packagesPath": "C:\\Users\\jarab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jarab\\Documents\\FHNW\\Semester 7\\Projekt\\repos\\UWP-SDK_clone\\SampleApp\\obj\\",
+      "projectPath": "C:\\Users\\lukat\\Repos\\UWP-SDK\\SampleApp\\SampleApp.csproj",
+      "projectJsonPath": "C:\\Users\\lukat\\Repos\\UWP-SDK\\SampleApp\\project.json",
+      "packagesPath": "C:\\Users\\lukat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lukat\\Repos\\UWP-SDK\\SampleApp\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\jarab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lukat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -22222,10 +22240,10 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "uap10.0.14393": {
+        "uap10.0.17763": {
           "projectReferences": {
-            "C:\\Users\\jarab\\Documents\\FHNW\\Semester 7\\Projekt\\repos\\UWP-SDK_clone\\Neosmartpen.Net\\Neosmartpen.Net.csproj": {
-              "projectPath": "C:\\Users\\jarab\\Documents\\FHNW\\Semester 7\\Projekt\\repos\\UWP-SDK_clone\\Neosmartpen.Net\\Neosmartpen.Net.csproj"
+            "C:\\Users\\lukat\\Repos\\UWP-SDK\\Neosmartpen.Net\\Neosmartpen.Net.csproj": {
+              "projectPath": "C:\\Users\\lukat\\Repos\\UWP-SDK\\Neosmartpen.Net\\Neosmartpen.Net.csproj"
             }
           }
         }
@@ -22236,7 +22254,7 @@
       "Win2D.uwp": "[1.19.0, )"
     },
     "frameworks": {
-      "uap10.0.14393": {}
+      "uap10.0.17763": {}
     },
     "runtimes": {
       "win10-arm": {
