@@ -21,6 +21,7 @@
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <PackageCertificateThumbprint>F390266AED35D9F9A6DB4B00883EA7550269C4C5</PackageCertificateThumbprint>
+    <RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -99,7 +100,6 @@
     <None Include="Resources\Ring Note.neonotes\.vs\VSWorkspaceState.json" />
     <None Include="Resources\Ring Note.neonotes\Data\0152.page_store\page.data" />
     <None Include="SampleApp_TemporaryKey.pfx" />
-    <None Include="project.json" />
     <None Include="www.neolab.kr.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +168,14 @@
       <Project>{0f14f4f1-6e37-4223-a462-88fe411263b9}</Project>
       <Name>Neosmartpen.Net</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>5.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="Win2D.uwp">
+      <Version>1.19.0</Version>
+    </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
