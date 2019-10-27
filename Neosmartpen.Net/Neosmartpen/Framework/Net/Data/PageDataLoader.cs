@@ -6,7 +6,7 @@ using System.Text;
 namespace Neosmartpen.Net
 {
 
-    /* author:: Lukas Müller
+    /* author:: Lukas Müller, Jonas Arab
      * e-mail:: lukatoni_mueller@hotmail.com
      * last-update:: 23.10.2019
      * This Code is only guaranteed to be compatible for the neopen models N2 and M1
@@ -18,7 +18,6 @@ namespace Neosmartpen.Net
         //public Page Page { get; private set; }
 
         public static Page LoadPage(string fileName) {
-
             filePointer = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             if (IsFileValid())
             {
@@ -104,7 +103,7 @@ namespace Neosmartpen.Net
                 float x = ReadFloat(floatBuffer);
                 float y = ReadFloat(floatBuffer);
                 dotBuilder = dotBuilder.coord(x, y);
-                int force = ReadInteger(floatBuffer); //this might be a shitty idea
+                int force = ReadInteger(floatBuffer); //this might be a shitty idea float -> int
                 dotBuilder = dotBuilder.force(force);
                 int timeDiff = filePointer.ReadByte();
                 dotBuilder = dotBuilder.timestamp(lastTimeStamp + timeDiff);

@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+
 using Neosmartpen.Net;
 using Neosmartpen.Net.Bluetooth;
+
 using Windows.Data.Xml.Dom;
 using Windows.Foundation;
 using Windows.Storage;
@@ -12,8 +17,6 @@ using Windows.Storage.Pickers;
 using Windows.UI.Notifications;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml;
 
@@ -28,7 +31,7 @@ namespace SampleApp
 	{
         private static String path = @"Resources\Ring Note.neonotes\Data\0152.page_store\page.data";
 
-		private ProgressDialog _progressDialog = new ProgressDialog();
+        private ProgressDialog _progressDialog = new ProgressDialog();
 		private StorageFile mFile;
 		public ObservableCollection<NColor> colors;
 		public enum AppStatus
@@ -116,7 +119,7 @@ namespace SampleApp
 			CurrentStatus = AppStatus.Disconnected;
 			ClearKeyValuePenProfile();
 
-            var pl = PageDataLoader.LoadPage(path);
+            var page = Task<Neosmartpen.Net.Page>.Run(() => {return PageDataLoader.LoadPage(path); });
         }
 
 		public void InitColor()
