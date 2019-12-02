@@ -52,6 +52,14 @@ namespace SampleApp
             initStrokesStyle();
         }
 
+        public void LoadDefaultData(Neosmartpen.Net.Page pdl)
+        {
+            foreach (Stroke s in pdl.Strokes)
+            {
+                DrawStroke(_canvasArchived, s);
+            }
+        }
+
         private void initStrokesStyle()
         {
             _canvasStrokeStyle = new CanvasStrokeStyle();

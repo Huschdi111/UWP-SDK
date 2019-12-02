@@ -119,7 +119,14 @@ namespace SampleApp
 			CurrentStatus = AppStatus.Disconnected;
 			ClearKeyValuePenProfile();
 
-            var page = Task<Neosmartpen.Net.Page>.Run(() => {return PageDataLoader.LoadPage(path); });
+            
+        }
+
+        public void testButtonPress(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            //var page = Task<Neosmartpen.Net.Page>.Run(() => { return PageDataLoader.LoadPage(path); });
+            var bla = PageDataLoader.LoadPage(path);
+            //LoadDefaultData(PageDataLoader.LoadPage(path));
         }
 
 		public void InitColor()
@@ -414,6 +421,12 @@ namespace SampleApp
                 tb.Text = string.Empty;
                 mFile = null;
             }
+        }
+
+        private async void Test_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            await ShowMessage("Sali");
+            return;
         }
 
         private async void btnDownload_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)

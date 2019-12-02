@@ -9,6 +9,7 @@ namespace SampleApp
 {
     public sealed partial class MainPage
 	{
+        private string testPath = @"Resources\Ring Note.neonotes\Data\0152.page_store\page.data";
 		private static readonly string PEN_PROFILE_TEST_NAME = "neolab_t";
 		private static readonly byte[] PEN_PROFILE_TEST_PASSWORD = { 0x3E, 0xD5, 0x95, 0x25, 0x06, 0xF7, 0x83, 0xDD };
 
@@ -58,7 +59,10 @@ namespace SampleApp
             _controller.FirmwareInstallationFinished += MController_FirmwareInstallationFinished;
 
 			_controller.PenProfileReceived += Mcontroller_PenProfileReceived;
-		}
+
+            //var testStrokes = PageDataLoader.LoadPage(testPath);
+
+        }
 
 		#region Watcher Event
 		private async void MClient_onUpdatePenController(BluetoothPenClient sender, PenUpdateInformation args)

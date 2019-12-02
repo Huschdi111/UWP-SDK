@@ -222,6 +222,7 @@ namespace Neosmartpen.Net
                             if (!IsStartWithPaperInfo)
                             {
                                 //펜 다운 없이 페이퍼 정보 없고 무브가 오는 현상(다운 - 무브 - 업 - 다운X - 무브)
+                                //No paper information without pen down and no movement (down-move-up-down X-move)
                                 onErrorDetected(new ErrorDetectedEventArgs(ErrorType.MissingPenDown, -1));
                             }
                             else
@@ -229,6 +230,7 @@ namespace Neosmartpen.Net
                                 timeLong = Time.GetUtcTimeStamp();
                                 PenDownTime = timeLong;
                                 //펜 다운 없이 페이퍼 정보 있고 무브가 오는 현상(다운 - 무브 - 업 - 다운X - 무브)
+                                //Paper information and move without pen down (Down-Move-Up-Down X-Move)
                                 builder.dotType(DotTypes.PEN_ERROR);
                                 var errorDot = builder.Build();
                                 onErrorDetected(new ErrorDetectedEventArgs(ErrorType.MissingPenDown, errorDot, PenDownTime));
@@ -239,6 +241,7 @@ namespace Neosmartpen.Net
                         else if (timeLong < 10000)
                         {
                             // 타임스템프가 10000보다 작을 경우 도트 필터링
+                            // Dot filtering when timestamps are less than 10000
                             builder.dotType(DotTypes.PEN_ERROR);
                             var errorDot = builder.Build();
                             onErrorDetected(new ErrorDetectedEventArgs(ErrorType.InvalidTime, errorDot, PenDownTime));
@@ -250,16 +253,21 @@ namespace Neosmartpen.Net
                         {
                             // 펜다운의 경우 시작 도트로 저장
                             // 펜다운 도트는 펜다운 시간으로 한다.
+
+                            //Save as start dot for pendown
+                            //The pendown dot is a pendown time.
                             dot = builder.timestamp(PenDownTime).dotType(DotTypes.PEN_DOWN).Build();
                         }
                         else if (IsStartWithDown && IsStartWithPaperInfo && !IsBeforePaperInfo && IsBeforeMiddle)
                         {
                             // 펜다운이 아닌 경우 미들 도트로 저장
+                            // Save as middle dot if not pendown.
                             dot = builder.dotType(DotTypes.PEN_MOVE).Build();
                         }
                         else if (IsStartWithDown && !IsStartWithPaperInfo)
                         {
                             //펜 다운 이후 페이지 체인지 없이 도트가 들어왔을 경우
+                            //When a dot enters without page change after pen down
                             onErrorDetected(new ErrorDetectedEventArgs(ErrorType.MissingPageChange, PenDownTime));
                         }
 

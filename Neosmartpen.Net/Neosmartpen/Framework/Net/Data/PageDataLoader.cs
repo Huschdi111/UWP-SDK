@@ -108,6 +108,7 @@ namespace Neosmartpen.Net
                 int timeDiff = filePointer.ReadByte();
                 dotBuilder = dotBuilder.timestamp(lastTimeStamp + timeDiff);
                 stroke.Add(dotBuilder.Build());
+                
             }
             
             int extraDataNum = filePointer.ReadByte();

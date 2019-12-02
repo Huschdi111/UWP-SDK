@@ -9,8 +9,9 @@ namespace Neosmartpen.Net
 {
     public class OfflineWorker : OfflineData
     {
-	    // 처리해야 할 노트 목록
-	    private Queue<OfflineDataInfo> mOfflineRequestQueue = null;
+        // 처리해야 할 노트 목록
+        //List of notes to process
+        private Queue<OfflineDataInfo> mOfflineRequestQueue = null;
 
         private Queue<OfflineDataFile> mOfflineProcessQueue = null;
 
@@ -19,8 +20,9 @@ namespace Neosmartpen.Net
         // TODO Check Task
         private Task tOfflineRequestThread, tOfflineProcessThread;
 
-	    // 현재 처리중인 노트
-	    private OfflineDataInfo currentNote = null;
+        // 현재 처리중인 노트
+        //Notes currently being processed
+        private OfflineDataInfo currentNote = null;
 
         private OfflineWorkResponseHandler mHandler;
 
@@ -159,6 +161,7 @@ namespace Neosmartpen.Net
                         Debug.WriteLine( "[OfflineWorker] start download offline note => sectionId : " + currentNote.Section + ", ownerId : " + currentNote.Owner + ", noteId : " + currentNote.Note );
 
                         // 데이터 전송을 요청한다.
+                        //Request data transfer.
                         mHandler.onRequestDownloadOfflineData( currentNote.Section, currentNote.Owner, currentNote.Note );
                     }
 				}

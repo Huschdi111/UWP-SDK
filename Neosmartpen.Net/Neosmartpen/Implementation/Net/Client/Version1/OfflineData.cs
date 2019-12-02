@@ -20,8 +20,12 @@ namespace Neosmartpen.Net
         // 기본 디렉토리 생성
         public void SetDefaultPath( string basepath )
         {
-			// uwp에서 아무 폴더에서 접근할 경우 권한 문제 발생, 따라서 MS권고하는 위치를 사용하도록 수정
-			// 검토 후 basepath를 막아야 할지도 모른다.
+            // uwp에서 아무 폴더에서 접근할 경우 권한 문제 발생, 따라서 MS권고하는 위치를 사용하도록 수정
+            // 검토 후 basepath를 막아야 할지도 모른다.
+            /*
+             If access from any folder in uwp, permission problem occurs. Therefore, use MS recommended location. 
+             may need to block basepath after review
+             */
             basepath = basepath == null || basepath == "" ? ApplicationData.Current.LocalFolder.Path : basepath;
 
 			OfflineData.DEFAULT_PATH = basepath + "\\" + DIR_ROOT;
